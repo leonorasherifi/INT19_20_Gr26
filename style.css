@@ -18,10 +18,14 @@ ul{
 	background-color: #333333;
 }
 
-li {
+ul li {
 	float:left;
+	width: 170px;
+	font-size: 20px;
+	line-height: 5px;
+	text-align: center;
 }
-li a{
+ul li a{
 	display: block;
 	color:white;
 	text-align:center;
@@ -29,9 +33,27 @@ li a{
 	text-decoration: none;
 }
 
-li a:hover
+ul li a:hover
 {
 background-color:orange ;
+transition: 1s all ease;
+}
+ul li ul li{
+	display: none;
+	font-size: 15px;
+}
+ul li:hover ul li{
+	display: block;
+	transition: 1s all;
+	animation: drop 1s ease;
+}
+@keyframes drop{
+	0%{
+		transform: scale(2,2)rotateX(90deg);
+	}
+	100%{
+		transform: scale(1,1)rotateX(0deg);
+	}
 }
 .search{
 	margin-top: 25px;
