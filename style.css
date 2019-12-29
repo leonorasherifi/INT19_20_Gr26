@@ -120,32 +120,34 @@ transform: translate(-50% 50%);
 
 }
 .container{
-	width: 800px;
 	margin-right:50px auto 0;
 	display: table;
 	box-sizing: border-box;
 	position: relative;
+	margin-bottom: 30px;
 	
 }
 .row
 {
 	margin:10px 0;
 }
-.column{
+.column1{
 
 background-color: rgb(120, 120, 120);
 	display: table-cell;
-	padding:20px;
+	padding:60px;
 	width: 33.33333%;
 	height: auto;
 	text-align:center;
-	border: 5px solid black;
+	border: 25px solid black;
 
 }
 .heading{
-	padding: 0;
-	width: 100%;
+	color: white;
+	background-color: #161417;
+	padding: 2px;
 }
+
 .head{
 	margin-top: 0;
 	margin-left: 0;
