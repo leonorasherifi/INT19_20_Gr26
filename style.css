@@ -125,7 +125,7 @@ transform: translate(-50% 50%);
 	display: table;
 	box-sizing: border-box;
 	position: relative;
-	top:500px;
+	
 }
 .row
 {
@@ -143,23 +143,28 @@ background-color: rgb(120, 120, 120);
 
 }
 .heading{
-
 	padding: 0;
 	width: 100%;
 }
 .head{
-		margin-top: 0;
-margin-left: 0;
+	margin-top: 0;
+	margin-left: 0;
 	background-color: blue;
 }
 
 .footer{
+
 	background-color: #292c2f;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
-	margin-top: 50px;
+	margin-top: bottom;
 	font: bold 14px sans-serif;
+}
+.footer #title{
+	color: white;
+	background-color: #161417;
+	padding: 2px;
 }
  
 .footer .footer-1,
@@ -246,4 +251,8 @@ margin-left: 0;
 .footer .footer-icons i{
 padding-top: 10px;
 }
+.footer .copyright{
+	border-top:1px solid white;
+}
+
 }
