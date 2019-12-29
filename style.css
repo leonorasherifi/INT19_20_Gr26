@@ -152,6 +152,98 @@ background-color: rgb(120, 120, 120);
 margin-left: 0;
 	background-color: blue;
 }
-footer{
-	position: bottom;
+
+.footer{
+	background-color: #292c2f;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	margin-top: 50px;
+	font: bold 14px sans-serif;
+}
+ 
+.footer .footer-1,
+.footer .footer-2,
+.footer .footer-3,
+.footer .footer-4{
+	display: inline-block;
+	vertical-align: top;
+	margin: 8px;
+}
+ 
+ .footer h3{
+	color: white;
+}
+
+.footer .footer-1{
+	width: 20%;
+}
+ 
+.footer .footer-1 .latest{
+	color: white;
+}
+
+.footer .links{
+	margin: 30px 0 12px;
+	padding: 0;
+	color: white;
+	margin:0;
+	font-size:14px;
+	line-height:1;
+}
+
+.footer .footer-2{
+	width: 20%;
+}
+
+.footer .footer-3{
+	width: 25%;
+}
+  
+.footer .footer-3 p{
+	color: white;
+	margin:0;
+	font-size:14px;
+	line-height:1;
+}
+
+.footer .footer-3 .company{
+	color: grey;
+	font-size:12px;
+	line-height:1;
+}
+
+.footer .footer-4{
+	width: 20%;
+}
+ 
+.footer-4 .footer-icons{
+	margin-top: 25px;
+}
+
+ .footer .footer-icons  p {
+ 	 margin-left:45px;
+ 	 margin-bottom: 20px;
+ 	 color: white;
+ }
+
+.footer .footer-icons a{
+	display: block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: grey;
+	border-radius: 15px;
+ 
+	font-size: 18px;
+	color: white;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: -42px;
+}
+.footer .footer-icons i{
+padding-top: 10px;
+}
 }
