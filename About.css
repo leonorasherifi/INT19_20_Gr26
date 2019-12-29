@@ -1,1 +1,67 @@
+body{
+	margin:0;
+	padding: 0;
+	font-size: 30px;
+  background-color:rgb(0,51,0);
 
+	color:white;
+	
+}
+h1{
+	text-align: right;
+	font-size: 50px;
+
+}
+p{
+	height: 200px;
+}
+.parallax {
+  /* The image used */
+  background-image: url("fig1.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-home{
+	width: 100%;
+}
+.parallax1 {
+  /* The image used */
+  background-image: url("fig2.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax2 {
+  /* The image used */
+  background-image: url("fig4.jpeg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+img{
+	background-image: transparent;
+width: 200px;
+height: auto;
+
+border-radius: 50%;
+
+}
