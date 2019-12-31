@@ -1,0 +1,65 @@
+body{
+	font-family:Brush Script MT;
+	margin:0;
+	padding:0;
+	color:white;
+	font-size: 30px;
+background-image: url("fig1.jpg");
+background-attachment: fixed;
+background-position: cover;
+background-attachment: cover;
+}
+.transparent{
+	background-color: rgba(0,0,0,0.9);
+	width: auto;
+	height: 400px;
+	position: relative;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-top: 50px;
+
+
+}
+ .bord{
+	margin-top: 100px;
+	background-color: rgba(0,0,0,0.9);
+	width: auto;
+
+	position: relative;
+	margin-left: 200px;
+	margin-right: 200px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+	box-sizing: border-box;
+	
+}
+h1{
+	font-size: 40px;
+	text-align: center;
+
+}
+.items{
+	width: auto;
+	
+	display: inline-flex;
+	margin-top:300px;
+	background-color: black;
+
+}
+
+.image{
+	width: 50%;
+	height: auto;
+}
+
+
+
+.paragraph a{
+	text-decoration: none;
+	color:white;
+	border:1px solid white;
+	border-radius: 40%;
+    float:right;
+
+
+}
