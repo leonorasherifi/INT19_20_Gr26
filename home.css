@@ -1,17 +1,8 @@
-body{
-	background-color:rgb(18, 48, 12);
-	color:white;
-	margin:0;
-	padding:0;
-	font-family: Garamond;
-}
-header{
-	background-color:rgba(76, 107, 9, 0.99);
-	width: 100%;
-	font-family:Garamond;
-	height: 215px;
+@media only screen and (max-width: 600px) {
+
 }
 
+/*--------------------------------------------------------------------------------------*/
 .libero p {
 	background-color:rgba(76, 107, 9, 0.99);
 	font-size: 12;
@@ -24,11 +15,23 @@ header{
  	margin-top: 5px;
  	margin-right: 5px;
  	margin-bottom: 0px;
+ 	text-align: center;
 }
 
 .libero p a{
 	color: white;
 	font-family: calibri;
+	padding: 4px 16px;
+/*---------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------*/
+}
+header{
+	background-color:rgba(76, 107, 9, 0.99);
+	width: 100%;
+	font-family:Garamond;
+	height: 215px;
 }
 
 h1{
@@ -39,17 +42,13 @@ h1{
     padding-top:5px;
     margin: 1px;
 }
+
 h5{
 	font-size:20px;
-	  padding-left:5px;
-	  padding-top:5px;
-	  margin: 1px 1px 45px 1px;
+	padding-left:5px;
+	padding-top:5px;
+	margin: 1px 1px 45px 1px;
 }
-/*
-form .input{
-bottom:10px;
-	float:right;
-}*/
 
 ul{
 	list-style-type: none;
@@ -79,15 +78,18 @@ ul li a{
 	border-radius: 10px;
 }
 
-ul li a:hover
-{
-background-color:rgba(211, 230, 9, 0.99);
+ul li a:hover{
+	background-color:rgba(211, 230, 9, 0.99);
+	color: black;
+}
 
+ul li ul{
+	padding: 0px;
 }
 
 ul li ul li{
 	display: none;
-	
+	position: relative;	
 }
 
 ul li:hover ul li{
@@ -104,11 +106,19 @@ ul li:hover ul li{
 		transform: scale(1,1)rotateX(0deg);
 	}
 }
+/*------------------------------------------------------------------------------------*/
 
+
+/*------------------------------------------------------------------------------------*/
 .section{
 	height: 500px;
-	border:1px solid black;
-	margin-top:80px; 
+	margin: 30px;
+	margin-top:80px;
+}
+
+.article{
+	width: auto;
+	height: 450px;
 }
 
 .article img{
@@ -117,53 +127,60 @@ ul li:hover ul li{
 	float: right;
 }
 
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 16px;
+#readmore{
+	float:right;
 }
 
-a:hover {
-  background-color: #ddd;
-  color: black;
+.imagetext a {
+	text-decoration: none;
+	display: inline-block;	
+	padding: 8px 16px;
+}
+
+.imagetext a:hover {
+	background-color: #7b5a05;
+	color: black;
 }
 
 .previous {
-  background-color: #4b6b09;
-  color: black;
+	background-color: #4b6b09;
+	color: black;
+	cursor: pointer;
 }
 
 .next {
-  background-color: #7f0808;
-  color: white;
+	background-color: #7f0808;
+	color: white;
+	cursor: pointer;
 }
 
 .round {
-  border-radius: 50%;
+	border-radius: 50%;
 }
 
-.imagetext{
-	margin: 10px;
-	padding: 10px;
+#article0{
+	display: block;
 }
-
-/*
-.heading{
-	
-	width: 100%;
-	background-color:rgba(131, 142, 15, 0.99);
+#article1{
+	display: none;
 }
-*/
+#article2{
+	display: none;
+}
+/*--------------------------------------------------------------------------------------*/
 
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
+/*--------------------------------------------------------------------------------------*/
 .column {
 	float: left;
     width:300px;
  	height: 150px;
  	margin: 74px;
+ 	margin-bottom: 35px;
+	margin-top: 35px;
 }
 
 .column h1{
@@ -174,21 +191,23 @@ a:hover {
 	margin: auto;
 }
 
-/* Clearfix (clear floats) */
 .row::after {
-  content: "";
-  clear: both;
-  display: table;
-  height: 60px;
-  }
+	content: "";
+	clear: both;
+	display: table;
+	height: 60px;
+}
 
-  .img{
+.img{
   	width:300px;
  	height: 150px;
-  }
+}
+/*---------------------------------------------------------------------------------------*/
 
+
+/*---------------------------------------------------------------------------------------*/
 .footer{
-
+	text-transform: capitalize;
 	background-color: rgba(22, 72, 8, 0.99);
 	box-sizing: border-box;
 	width: 100%;
@@ -196,6 +215,7 @@ a:hover {
 	margin-top: bottom;
 	font: bold 14px sans-serif;
 }
+
 .footer #title{
 	color: white;
 	background-color: rgb(3, 41, 3);
@@ -212,37 +232,22 @@ a:hover {
 	margin: 8px;
 }
  
- .footer h3{
+.footer h3{
 	color: white;
 	font-family: Bahnschrift Light Condensed;
 }
 
-.footer .footer-1{
-	width: 20%;
+a:hover{
+	color: yellow;
 }
- 
+
 .footer .footer-1 .latest{
 	color: white;
 }
 
-.footer .links{
+.footer .footer-2 .links{
 	margin: 30px 0 12px;
 	padding: 0;
-	color: white;
-	margin:0;
-	font-size:14px;
-	line-height:1;
-}
-
-.footer .footer-2{
-	width: 20%;
-}
-
-.footer .footer-3{
-	width: 25%;
-}
-  
-.footer .footer-3 p{
 	color: white;
 	margin:0;
 	font-size:14px;
@@ -253,23 +258,28 @@ a:hover {
 	color: grey;
 	font-size:12px;
 	line-height:1;
+	margin-left: 10px: 
 }
-
-.footer .footer-4{
-	width: 20%;
+  
+.footer .footer-3 p{
+	color: white;
+	margin:0;
+	font-size:14px;
+	line-height:1;
 }
  
-.footer-4 .footer-icons{
+.footer .footer-4 .footer-icons{
 	margin-top: 25px;
 }
 
- .footer .footer-icons  p {
- 	 margin-left:45px;
- 	 margin-bottom: 20px;
- 	 color: white;
- }
+.footer .footer-4 .footer-icons  p {
+ 	margin-left:45px;
+ 	margin-top: 20px;
+ 	margin-bottom: 15px;
+ 	color: white;
+}
 
-.footer .footer-icons a{
+.footer .footer-4 .footer-icons a{
 	display: block;
 	width: 35px;
 	height: 35px;
@@ -285,10 +295,40 @@ a:hover {
 	margin-right: 3px;
 	margin-bottom: -42px;
 }
-.footer .footer-icons i{
-padding-top: 10px;
+
+.footer .footer-4 .footer-icons i{
+	padding-top: 10px;
 }
-.footer .copyright{
-	border-top:1px solid white;
+
+.footer .footer-4 .footer-icons i:hover{
+	color: yellow;
+}
+/*---------------------------------------------------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------*/
+.copyright{
 	background-color: rgb(3, 41, 3);
+	width: 100%;
+    height: 40px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
+
+.copyright p {
+	padding-top:10;
+}
+
+.copyright #p1{
+	width: 50%;
+	max-width: 50%;
+	display: inline-block;
+	margin-top: 0px;
+}
+
+.copyright #p2{
+	float: right;
+	margin-top: 0px;
+	text-align:right;
+}
+/*---------------------------------------------------------------------------------------*/
