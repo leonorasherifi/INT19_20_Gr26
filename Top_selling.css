@@ -1,1 +1,144 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	padding: 0px;
+	margin: 0px;
+	background-color: #CCFFE5;
+	font-family: 'lora',serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'candal',serif;
+	color: black;
+	margin: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+.page-wrapper a:hover{
+	color:#006669;
+}
+
+.clearfix::after{
+content: '';
+display: block;
+clear: both;
+}
+
+/*POST SLIDER  --------------------------------------------------------------------------------------*/
+.post-slider{
+	position: relative;
+}
+
+.post-slider .slider-title{
+text-align: center;
+margin: 30px auto;
+}
+
+.post-slider .next{
+position: absolute;
+top: 50%;
+right: 30px;
+font-size: 2em;
+color: blue;
+cursor: pointer;
+}
+
+.post-slider .prev{
+position: absolute;
+top: 50%;
+left: 30px;
+font-size: 2em;
+color: blue;
+cursor: pointer;
+}
+
+.post-slider .post-wrapper{
+	width: 84%;
+	height: 350px;
+	margin: 0px auto;
+	overflow: hidden;
+	padding: 10px 0px 10px 0px;
+}
+
+.post-slider .post-wrapper .post{
+	height: 330px;
+	width: 300px;
+	margin: 0px 10px;
+	display: inline-block;
+	background: white;
+	border-radius:5px;
+	box-shadow: 1rem 1rem 1rem 1rem #a0a0a033;
+}
+
+
+.post-slider .post-wrapper .post .post-info{
+	height: 130px;
+	padding: 0px 5px;
+}
+
+.post-slider .post-wrapper .post .slider-image{
+	width: 100%;
+	height: 200px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+
+/*CONTENT -------------------------------------------------------------------------------------------*/
+.content{
+	width: 90%;
+	margin: 30px auto 30px;
+}
+
+.content .main-content{
+	width: 100%;
+	float: left;
+}
+
+.content .main-content .post{
+	width: 100%;
+	height: 300px;
+	margin: 20px auto;
+	border-right: 5px;
+	background: white;
+	font-size: 14;
+}
+
+.content .main-content .post .post-image{
+	width: 40%;
+	height: 100%;
+	float: left;
+}
+
+.content .main-content .post .post-preview{
+	width: 60%;
+	padding: 10px;
+	float: right;
+}
+
+.content .main-content .recent-post-title{
+margin: 20px;
+}
+
+.content .sidebar{
+ width: 30%;
+ float: left;
+ border: 1px dashed green;
+ height: 300px;
+}
+
+
+.pt-3-half {
+padding-top: 1.4rem;
+}
+
+
+/* MEDIA QUERRIES */
 
