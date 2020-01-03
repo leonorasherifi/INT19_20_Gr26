@@ -4,13 +4,105 @@ body{
   padding:0;
   color:white;
   font-size: 30px;
-background-image: url("fig1.jpg");
+background:url("images/smart-security/home.jpg") ;
 background-attachment: fixed;
-background-position: cover;
-background-attachment: cover;
+background-size:cover;
+background-origin: content-box;
+}
+
+
+header{
+  background-color:rgba(76, 107, 9, 0.99);
+  width: 100%;
+  font-family:Garamond;
+  height: 250px;
+}
+
+.search{
+  margin-top:-120px;
+  float: right;
+  margin-right: 25px; 
+}
+.search input{
+  margin-top: 30px;
+  padding: 7px;
+  border:none;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+.search button{
+  margin-top: 30px;
+  width: 20px;
+  float: right;
+  background:#7f0808;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  position: relative;
+  padding: 8px;
+  font-family: sans-serif;
+  border:none;
+  font-size: 17px;
+}
+
+ul{
+  list-style-type: none;
+  padding-bottom:50px;
+  margin:0;
+}
+
+ul li {
+
+  padding:2px;
+  float:left;
+  font-size: 20px;
+  line-height: auto;
+  text-align: center;
+  width: 150px; 
+  height: auto;
+}
+
+ul li a{
+    font-size: 30px;
+    padding: 2px;
+  display: block;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  background-color:rgba(104, 111, 26, 0.99);
+  border-radius: 10px;
+}
+
+ul li a:hover{
+  background-color:rgba(211, 230, 9, 0.99);
+  color: black;
+}
+
+ul li ul{
+  padding: 0px;
+}
+
+ul li ul li{
+  display: none;
+  position: relative; 
+}
+
+ul li:hover ul li{
+  display: block;
+  transition: 1s all;
+  animation: drop 1s ease;
+}
+
+@keyframes drop{
+  0%{
+    transform: scale(2,2)rotateX(90deg);
+  }
+  100%{
+    transform: scale(1,1)rotateX(0deg);
+  }
 }
 .transparent{
-  background-color: rgba(0,0,0,0.9);
+ background-color: rgba(0,0,0,0.8);
   width: auto;
   height: 400px;
   position: relative;
@@ -22,7 +114,7 @@ background-attachment: cover;
 }
  .bord{
   margin-top: 100px;
-  background-color: rgba(0,0,0,0.9);
+  /* background-color: rgba(0,0,0,0.9);*/
   width: auto;
 
   position: relative;
@@ -34,8 +126,9 @@ background-attachment: cover;
   
 }
 h1{
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
+   text-shadow: 5px 5px 5px green;
 
 }
 .items{
