@@ -2,66 +2,130 @@
 <head>
 	<title>Smart Security</title>
 	<link rel="stylesheet" href="smart-security.css">
+	<style>
+	.transparent{
+
+	border:30px solid transparent;
+	border-image-source: url(flower.jpg);
+	border-image-slice: 50;
+	border-image-repeat:stretch;
+	}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  $("#less").click(function(){
+    $("#show").hide("slow",function(){
+    	alert("The text is hidden now");
+    });
+  });
+  $("#more").click(function(){
+    $("#show").show();
+  });
+
+
+});
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+
+
 	</head>
 	<body>
+
+<header>
+	<h1>Smart Home</h1>
+	<h3>How Smart Homes Work ?!</h3>
+
+<form class="search">
+	<input type="text" placeholder="search">
+	<button type="submit">
+		<i class="fa fa-search"></i>
+	</button>
+</form>
+
+	<div class="nav">
+		<ul>
+			<li><a href="home.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="#">Smart</a>
+				<ul>
+					<li><a href="smart-heating.html">Heating</a></li>
+					<li><a href="smart-lighting.html">Lighting</a></li>
+					<li><a href="smart-security.html">Security</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Top Selling</a></li>
+  			<li><a href="join.html">Join</a></li>
+ 		</ul>
+	</div>
+</header>
 		<div class="transparent">
-			<h1>Smart Security</h1>
-			<pre> Create an AMAZING 
-			SECURE and
-					 SMART HOME</pre>
-			</div>
+	<h1 id="flip">Smart Security</h1>
+<p id="panel">Keep your home secure by using our devices </p>
+		
+		</div>
 
 
 
 <div class="bord">
 
-	<p style="font-color:black;">"More and more, so it seems to me, light is the beautifier of the building."
+	<p style="font-color:black;" id="show">"More and more, so it seems to me, light is the beautifier of the building."
 	<br>
 	Frank Lloyd Wright - architect</p>
-
+   <button id="less">Show Less</button>
+	<button id="more">Show More</button>
 
     <div class="items">
-	    <img src="join.jpg" class="image"/>
+	    <img src="images/smart-security/ring-alarm.png" class="image"/>
 	
 		<div class="div">
-			<h1 class="paragraph">Name of Product</h1>
-			<p class="paragraph">Pershkrimi i produktit sfzdfddsfsdfsdfsdfsdfdfdfsdfdfsd
-			fsdfdfdfdfdfs
-			dffsdfdfd</p>
+			
+			<h1 class="paragraph" id="toggle">Ring-Alarm</h1>
+			<p  class="paragraph" id="slide">Ring Alarm 5 Piece Kit – Home Security System with optional 24/7 Professional Monitoring – No long-term contracts – Works with Alexa</p>
+			<p>Cost : 139.00$</p>
+			
+			<p  class="paragraph" id="slide"><a href="#" class="paragraph">Buy</a></p>
+		</div>
+</div>
+<div class="items">
+	    <img src="images/smart-security/stick.webp" class="image"/>
+	
+		<div class="div">
+			<h1 class="paragraph" id="hide/show">Stick up Camera</h1>
+				
+			<p  class="paragraph">New Ring Stick Up Cam Battery HD security camera with two-way talk, Works with Alexa</p>
+			<p>Cost : 50.00$</p>
+
 			<p class="paragraph"><a href="#" class="paragraph">Buy</a></p>
 		</div>
 </div>
 <div class="items">
-	    <img src="join.jpg" class="image"/>
+	    <img src="images/smart-security/smart.png" class="image"/>
 	
 		<div class="div">
-			<h1 class="paragraph">Name of Product</h1>
-			<p class="paragraph">Pershkrimi i produktit sfzdfddsfsdfsdfsdfsdfdfdfsdfdfsd
-			fsdfdfdfdfdfs
-			dffsdfdfd</p>
-			<p class="paragraph"><a href="#" class="paragraph">Buy</a></p>
-		</div>
-</div>
-<div class="items">
-	    <img src="join.jpg" class="image"/>
-	
-		<div class="div">
-			<h1 class="paragraph">Name of Product</h1>
-			<p class="paragraph">Pershkrimi i produktit sfzdfddsfsdfsdfsdfsdfdfdfsdfdfsd
-			fsdfdfdfdfdfs
-			dffsdfdfd</p>
+			<h1 class="paragraph" id="hide/show">Ring Smart Lighting</h1>
+				
+			<p  class="paragraph">Ring Smart Lighting – Steplight, Battery-Powered, Outdoor Motion-Sensor Security Light, Black (Ring Bridge required)</p>
+				<p>Cost : 200$</p>
 			<p class="paragraph"><a href="#" class="paragraph">Buy</a></p>
 		</div>
 </div>
 
 <div class="items">
-	    <img src="join.jpg" class="image"/>
+	    <img src="images/smart-security/door-lock.png" class="image"/>
 	
 		<div class="div">
-			<h1 class="paragraph">Name of Product</h1>
-			<p class="paragraph">Pershkrimi i produktit sfzdfddsfsdfsdfsdfsdfdfdfsdfdfsd
-			fsdfdfdfdfdfs
-			dffsdfdfd</p>
+			<h1 class="paragraph">Smart Lock Door</h1>
+			
+			<p class="paragraph">Kaadas 5155 High security Beyond Classic smart door lock</p>
+			<p>Cost : 165.00$</p>
 			<p class="paragraph"><a href="#" class="paragraph">Buy</a></p>
 		</div>
 </div>
