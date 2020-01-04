@@ -1,11 +1,13 @@
 <html>
 <head>
 	<title>Smart Home</title>
+    <link rel="stylesheet" href="header.css"/>
 	<link rel="stylesheet" href="home.css"/>
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="footer.css"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 <style>
 	body {
-	background-color:rgb(70,130,180);
+	   background-color: #085C04;
 	color:white;
 	margin:0;
 	padding:0;
@@ -43,15 +45,15 @@
 		<ul>
 			<li><a href="home.html">Home</a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="home.html">Smart</a>
+			<li><a href="#">Smart</a>
 				<ul>
 					<li><a href="smart-heating.html">Heating</a></li>
 					<li><a href="smart-lighting.html">Lighting</a></li>
-					<li><a href="smart-security">Security</a></li>
+					<li><a href="smart-security.html">Security</a></li>
 				</ul>
 			</li>
 			<li><a href="Top_selling.html">Top Selling</a></li>
-  			<li><a href="join.html">Join</a></li>
+  			<li><a href="Contact/contact.html">Contact</a></li>
  		</ul>
 	</div>
 </header>
@@ -60,7 +62,7 @@
 <div class="section">
 
 	<article id="article0" class="article">
-			<img src="images/home/2.jpg" alt="smart home">
+			<img src="2.jpg" alt="smart home">
 		<div class="imagetext">
 				<div>
 					<a onclick="previous(0)"  class="previous round">&#60;</a>
@@ -71,12 +73,12 @@
 					
 						<p>What if all the devices in your life could connect to the internet? Not just computers and smartphones, but everything: clocks, speakers, lights, doorbells, cameras, windows, window blinds, hot water heaters, appliances, cooking utensils, you name it.<span id="dots">...</span><span id="more"> And what if those devices could all communicate, send you information, and take your commands? It's not science fiction; it's the Internet of Things (IoT), and it's a key component of home automation and smart homes</p>
 				</div>
-					<a id="myBtn" onclick="showmore()" ><span style="color: #a11970;">read more</span></a>
+					<a id="myBtn" onclick="showmore()" ><span style="color: #7F0808;">read more</span></a>
 		</div>
 	</article>
 
 	<article id="article1" class="article">
-			<img src="images/home/1.jpg">
+			<img src="1.jpg">
 		<div class="imagetext">
 				<div>
 					<a onclick="previous(1)"  class="previous round">&#60;</a>
@@ -94,12 +96,12 @@
 						devices and appliances in your home so they can communicate with
  						each other and with you.</p>
 				</div>
-					<a id="myBtn1" onclick="showmore1()"><span style="	color: #a11970;">read more</span></a>
+					<a id="myBtn1" onclick="showmore1()"><span style="	color: #7F0808;">read more</span></a>
 		</div>
 	</article>
 
 	<article id="article2" class="article">
-			<img src="images/home/4.jpg">
+			<img src="4.jpg">
 		<div class="imagetext">
 				<div>
 					<a onclick="previous(2)"  class="previous round">&#60;</a>
@@ -111,7 +113,7 @@
 						<p>So, you want to turn your “dumb” house into a smarter one. You’re not alone. Analysts expect the smart home devices industry to reach $151.38 billion by 2024.
 						But the question is, where do you begin? The thousands of smart gadgets on the market can overwhelm smart home beginners who are ready to enjoy better-equipped abodes.<span id="dots2">...</span><span id="more2"> This straightforward list features six must-have devices to get you started, and we’ve called out some of our favorites within each category. Soon, you’ll be sitting back and relaxing while Alexa or Google Assistant controls your home and manages your daily schedule</p>
 				</div>
-					<a id="myBtn2" onclick="showmore2()"><span style="	color: #a11970;">read more</span></a>
+					<a id="myBtn2" onclick="showmore2()"><span style="	color: #7F0808;">read more</span></a>
 		</div>
 	</article>
 </div>
@@ -119,17 +121,17 @@
 <div class="row">
   	<div class="column">
   		<h1>Heating</h1>
-    	<a href="smart-heating.html"><img class="img" src="images/home/h.jpg"></a>
+    	<a href="smart-heating.html"><img class="img" src="1a.jpg"></a>
   	</div>
 
   	<div class="column">
   		<h1>Lighting</h1>
-    	<a href="smart-lighting.html"><img class="img" src="images/home/lighting.jpg"></a>
+    	<a href="smart-lighting.html"><img class="img" src="1c.jpg"></a>
   	</div>
 
   	<div class="column">
   		<h1>Security</h1>
-    	<a href="smart-security.html"><img class="img" src="images/home/security.jpg"></a>
+    	<a href="smart-security.html"><img class="img" src="1b.jpg"></a>
   	</div>
 </div>
 
@@ -142,9 +144,9 @@
 		<div class="footer-1" style="width: 20%;">
 			<h3>Latest From The Blog</h3>
 			<div class="latest">
-				<h4>Best Smart TV 2020</h4>
-				<h6>Every smart TV platform</h6>
-				<p style="font-size: 12px;">he big addition to most major smart TVs in 2019 was Apple AirPlay 2 and TV and movie integration of the Apple TV platform. Apple signed deals with most major TV makers including LG, Samsung and Vizio, and updates began rolling out to 2018/2019 TVs in July.</p>
+				<h4>Latest</h4>
+				<h6>Something!!!</h6>
+				<p>Text from the latest</p>
 			</div>
 		</div>
 
@@ -227,7 +229,6 @@
 		document.getElementById("article"+a).style.display="none"
 		page=page-1;
 		page==-1 ? page=2 : page=page ; 
-
 		makevisible(page);
 	}
 	function makevisible(page){
@@ -235,15 +236,15 @@
 		
 				console.log(currentpage)
 		document.getElementById("article"+currentpage).style.display="block";
-
 	}
-
-
+	// function showmore(a){
+	// 	text = document.getElementById("text"+a).innerHTML;
+	// 	console.log(text);
+	// }
 function showmore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("myBtn");
-
   if (dots.style.display === "none") {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more"; 
@@ -254,12 +255,10 @@ function showmore() {
     moreText.style.display = "inline";
   }
 }
-
 function showmore1() {
   var dots = document.getElementById("dots1");
   var moreText = document.getElementById("more1");
   var btnText = document.getElementById("myBtn1");
-
   if (dots.style.display === "none") {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more"; 
@@ -270,12 +269,10 @@ function showmore1() {
     moreText.style.display = "inline";
   }
 }
-
 function showmore2() {
   var dots = document.getElementById("dots2");
   var moreText = document.getElementById("more2");
   var btnText = document.getElementById("myBtn2");
-
   if (dots.style.display === "none") {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more"; 
