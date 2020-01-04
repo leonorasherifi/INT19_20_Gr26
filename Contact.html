@@ -1,0 +1,150 @@
+<!Doctype html>
+<html>
+<head>
+        <title>Contact Us</title>    
+   <script src="../sweetalert.js"></script>
+   <link rel="stylesheet" href="../footer.css"/>
+    <meta lang="en">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="contact.css"/>
+    <link rel="stylesheet" href="../scroll-up-button.css">
+    <script src="../scroll-up.js"></script>
+<link rel="stylesheet" href="../header.css">
+        
+     
+    </head>
+<body>
+
+<header>
+   <h1>Smart Home</h1>
+  <h5>How Smart Homes Work ?!</h5>
+
+  <form class="search">
+    <input type="text" placeholder="search">
+    <button type="submit">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+
+  <div class="nav">
+                <ul>
+                    <<li><a href="../home.html">Home</a></li>
+      <li><a href="../About/about.html">About</a></li>
+      <li><a href="#">Smart</a>
+        <ul>
+          <li><a href="../Smart/smart-heating/smart-heating.html">Heating</a></li>
+          <li><a href="../Smart/smart-lighting/smart-lighting.html">Lighting</a></li>
+          <li><a href="../Smart/smart-security/smart-security.html">Security</a></li>
+        </ul>
+      </li>
+      <li><a href="../Top-selling/top-selling.html">Top Selling</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+</header>
+
+
+
+       <!-- Butoni per scroll up -->
+   		<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+        <!--Contact Us-->
+        <!--Content-pjese e page-layout sipas HTML5
+        Definimi i klasave per formatim te formes-->
+        <content>
+        <form  class="contactForm" onsubmit ="return check_info()" action="www.randyconnolly.com/tests/process.php" method="get" autocomplete="on"> 
+        <fieldset class="field1">
+        <h1 id ="text">CONTACT US TODAY</h1><br>
+        <input type="text" id="name1" placeholder="First Name" maxlength="15" width="40px" > 
+        <input type="text" id="surname1" placeholder="Last Name" maxlength="15" ><br/>
+        <input type="text" id="country1" placeholder="Country" maxlength="30">
+        <input type="email" id="email1" placeholder="Email" maxlength="50" pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,5}$">
+        <textarea  placeholder="  Message" id="textarea1" rows="4" maxlength="400"></textarea><br/> 
+        <p id="teksti">Gjinia: M<input class="special" type="radio" name="radio" checked="checked"> F<input class="special" type="radio" name="radio"></p>
+        
+        <input class="submit" type="submit" name="SUBMIT" >
+        </fieldset>
+        </form>         
+    </content>
+   
+       
+    
+   <!--Section-pjese e page-layout sipas HTML5
+        Definimi i klasave per formatim te formes tjeter-->
+    <section class="left">
+        <fieldset class="field2">
+            <a href="createaccount.html"><p class ="button1">Create Account</p></a>
+            <div class="map">
+                <iframe id="google_map" width="300" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1504707.4557663104!2d19.78083012307163!3d42.55780374620845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13537af354bf7df1%3A0xbfffeedfabc31791!2sKosovo!5e0!3m2!1sen!2s!4v1515714347250"></iframe>
+            </div>
+                <input type="submit" value="Show my location" id="get_location" style="color: white; height: 50px; width: 200px; background-color:#2950c5; border-radius: 10px;">
+                <script type="text/javascript">
+                    var c = function(pos){
+                    var lat = pos.coords.latitude,
+                    long = pos.coords.longitude,
+                    koordinatat = lat + ' ,' + long;
+                    document.getElementById('google_map').setAttribute('src','https://maps.google.co.uk?q='+koordinatat+'&z=17&output=embed');
+                }
+                    document.getElementById('get_location').onclick = function(){
+                    navigator.geolocation.getCurrentPosition(c);
+                    return false;
+                    }
+                </script>
+       
+      <p>
+      <img src="../images/contact/pointer.png" height="16px" width="16px" alt="poiner">
+       
+        
+        <p style="font-size: 1.2em"><mark>11000</mark> Prishtine</p>
+        <p>Kosovo</p>
+        <form id="ratePage" action="www.randyconnolly.com/tests/process.php" method="get" autocomplete="on">
+            <p style="margin-top: 40px; font-weight: bold"><label>Rate our page</label><p>
+                <p><input name="rate" type="radio">5 stars</p>
+                <p><input name="rate" type="radio">4 stars</p>
+                <p><input name="rate" type="radio">3 stars</p>
+                <p><input name="rate" type="radio">2 stars</p>
+                <p><input name="rate" type="radio">1 stars</p>
+            <button type="submit" name="rating" id="ruajbuton">Save</button>
+        </form>
+        
+    
+   </fieldset>
+    </section>
+    <!--Validimi i formes-->
+            <script type="text/javascript">
+        function check_info(){
+
+            
+            var Name=document.getElementById('name1').value;
+            var Surname=document.getElementById('surname1').value;
+            var Email=document.getElementById('email1').value;
+            var Tekstarea=document.getElementById('textarea1').value;
+            var Country=document.getElementById('country1').value;
+
+
+            
+          if (Name=="" || Surname=="" || Email=="" || Tekstarea=="" || Country=="" ){
+                
+               swal(
+                    'Oops...',
+                    'Fill out the fields!',
+                    'error'
+                    );
+                  return false;  
+            }
+            else
+                {
+                return true;          
+                }
+
+        }
+    </script>
+    <!--Footer-->
+    <!--Footer-pjese e page-layout sipas HTML5
+        Definimi i klasave per formatim te footerit-->
+   <div class="footer">
+	<p> Copyright &copy  2017-2018. All Rights Reserved </p>
+</div>
+
+    
+</body>
+    </html>
