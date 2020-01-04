@@ -1,7 +1,7 @@
 @media only screen and (max-width: 1045px) {
 
 .libero p {
-	background-color:rgb(128, 100, 130);
+	background-color:rgba(76, 107, 9, 0.99);
 	font-size: 12;
 	text-align: center;
 	color:#7F0808;
@@ -17,7 +17,8 @@
 
 @media only screen and (min-width: 1045px) {
 .libero p {
-	background-color:rgb(128, 100, 130);
+	background-color: #0E360B;
+	
 	font-size: 12;
 	text-align: center;
 	color:#7F0808;
@@ -35,125 +36,8 @@
 	color: white;
 	font-family: calibri;
 	padding: 4px 16px;
+}
 /*---------------------------------------------------------------------------------------*/
-
-
-/*  HEADER  ---------------------------------------------------------------------------*/
-}
-header{
-	background-color:#806482;
-	width: 100%;
-	font-family:Garamond;
-	height: 215px;
-}
-
-h1{
-	color: #10ffff;
-	font-family:Brush Script MT;
-	font-size:60px;
-    padding-left:5px;
-    padding-top:5px;
-    margin: 1px;
-}
-
-h5{
-	font-size:15px;
-	padding-left:9px;
-	padding-top:0px;
-	margin: 1px 1px 55px 1px;
-	color: rgb(0, 12, 51);
-	font-family: cursive;
-}
-
-/*  SEARCH  -------------------*/
-.search{
-	margin-top:-120px;
-	float: right;
-	margin-right: 25px; 
-}
-
-.search input{
-	padding: 7px;
-	border:none;
-	font-size: 16px;
-	font-family: sans-serif;
-}
-
-.search button{
-	float: right;
-	background:rgb(0, 12, 51);
-	color: white;
-	border-radius: 0 5px 5px 0;
-	cursor: pointer;
-	position: relative;
-	padding: 8px;
-	font-family: sans-serif;
-	border:none;
-	font-size: 17px;
-}
-/*--------------------------------*/
-
-/*  NAV  -------------------------*/
-ul{
-	list-style-type: none;
-	padding-bottom:50px;
-	margin:0;
-}
-
-ul li {
-
-	padding:2px;
-	float:left;
-	font-size: 20px;
-	line-height: auto;
-	text-align: center;
-	width: 150px; 
-	height: auto;
-}
-
-ul li a{
-    font-size: 25px;
-    padding: 2px;
-	display: block;
-	color:white;
-	text-align:center;
-	text-decoration: none;
-	background-color:rgba(17, 114, 134, 0.99);
-	border-radius: 10px;
-	font-family: Lucida Sans Unicode;
-}
-
-ul li a:hover{
-	background-color:rgba(52, 142, 160, 0.99);
-	color: black;
-}
-
-ul li ul{
-	padding: 0px;
-}
-
-ul li ul li{
-	display: none;
-	position: relative;	
-}
-
-ul li:hover ul li{
-	display: block;
-	transition: 1s all;
-	animation: drop 1s ease;
-}
-
-@keyframes drop{
-	0%{
-		transform: scale(2,2)rotateX(90deg);
-	}
-	100%{
-		transform: scale(1,1)rotateX(0deg);
-	}
-}
-/*---------------------------------------------------------------------------------*/
-
-
 
 /*  SECTION  (1 IMAGE)--------------------------------------------------------------*/
 .section{
@@ -162,10 +46,17 @@ ul li:hover ul li{
 	margin-top:80px;
 }
 
+
+@media(max-width: 700px){
+	.section{
+		width: 100%;
+	}
+}
+
 .article{
 	width: auto;
 	height: 450px;
-	padding-top: 5%;
+	padding-top: 7%;
 }
 
 .article img{
@@ -190,19 +81,19 @@ ul li:hover ul li{
 }
 
 .imagetext a:hover {
-	background-color: rgba(52, 142, 160, 0.99);
+	background-color: #7b5a05;
 	color: black;
 }
 
 .previous {
-	background-color: #10ffff;
-	color: #000c33;
+	background-color: #4b6b09;
+	color: black;
 	cursor: pointer;
 }
 
 .next {
-	background-color: #000c33;
-	color: #10ffff;
+	background-color: #7f0808;
+	color: white;
 	cursor: pointer;
 }
 
@@ -210,16 +101,15 @@ ul li:hover ul li{
 	border-radius: 50%;
 }
 .imagetext h1{
-	font-size:25px;
-	font-family: Lucida Sans Unicode;
-	color: #a11970;
+	font-size:30px;
+	font-family: Bahnschrift Condensed;
+	color: #7F0808;
 }
 
 .imagetext p{
-	font-size: 20px;
+	font-size: 15px;
 	color: white;
-	font-family: Arial narrow;
-	color:#f777ff;
+	font-family: arial;
 }
 
 #article0{
@@ -259,12 +149,11 @@ ul li:hover ul li{
 }
 
 .column h1{
-	background-color: #806482;
+	background-color: #7F0808;
 	color:white;
 	font-size: 45px;
 	text-align: center;
 	margin: auto;
-	color: #780a10;
 }
 
 .row::after {
@@ -285,7 +174,7 @@ ul li:hover ul li{
 /*  FOOTER  ---------------------------------------------------------------------*/
 .footer{
 	text-transform: capitalize;
-	background-color: rgb(81, 68, 82);;
+	background-color: #070707;
 	box-sizing: border-box;
 	width: 100%;
 	text-align: left;
@@ -293,13 +182,9 @@ ul li:hover ul li{
 	font: bold 14px sans-serif;
 }
 
-.footer p{
-	font-family: Shruti;
-}
-
 .footer #title{
 	color: white;
-	background-color: rgb(86, 51, 88);
+	background-color: rgb(3, 41, 3);
 	padding: 2px;
 	font-family: Bahnschrift Light Condensed;
 }
@@ -313,13 +198,13 @@ ul li:hover ul li{
 	margin: 8px;
 }
  
-.footer h2{
+.footer h3{
 	color: white;
-	font-family: Malgun Gothic;
+	font-family: Bahnschrift Light Condensed;
 }
 
 a:hover{
-	color:rgb(70, 130, 180);
+	color: yellow;
 }
 
 .footer .footer-1 .latest{
@@ -365,7 +250,7 @@ a:hover{
 	width: 35px;
 	height: 35px;
 	cursor: pointer;
-	background-color: rgb(95, 23, 27);
+	background-color: rgb(51,153,51);
 	border-radius: 15px;
  
 	font-size: 18px;
@@ -382,7 +267,7 @@ a:hover{
 }
 
 .footer .footer-4 .footer-icons i:hover{
-	color: rgb(70, 130, 180);
+	color: yellow;
 }
 /*---------------------------------------------------------------------------------------*/
 
@@ -390,7 +275,7 @@ a:hover{
 
 /*COPYRIGHT FOTER2  ----------------------------------------------------------------------*/
 .copyright{
-	background-color: rgb(86, 51, 88);
+	background-color: rgb(3, 41, 3);
 	width: 100%;
     height: 40px;
     padding-right: 10px;
