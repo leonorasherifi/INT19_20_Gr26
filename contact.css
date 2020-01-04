@@ -1,0 +1,162 @@
+
+
+body
+{
+    font-family:'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image:url("join.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+  position: relative;
+  margin-top: 200px;
+}
+
+.left{
+  align-content: left;
+  float: right;
+  width: 250px;
+  height: auto;
+  margin-top: -43%;
+  margin-right: 8%;
+  border-radius: 10px;
+
+}
+
+/* Formatimi i klases contactForm */
+.contactForm{
+  margin-right: 10px;
+  margin-top: 200px;
+  font-family:sans-serif,cursive,fantasy;
+}
+
+/* Formatimi i klases position
+Formatim brenda elementeve te formes*/
+
+/*Formatimi i fushes input brenda klases contactForm*/
+.contactForm input{
+  padding: 25px;
+  margin-bottom: 3%;
+  margin-left: 4%;
+  border-radius: 25px;
+}
+.contactForm .special{
+  margin-left: 5px;
+  margin-right: 10px;
+}
+/*Ndryshimi i ngjyres se borderit me focus ne fushen input*/
+.contactForm input:focus
+{
+  border-color:green;
+   
+  outline: none;
+}
+/*Formatimi i fushes textarea brenda klases contactForm*/
+.contactForm textarea
+{
+  width:77%;
+  margin-bottom: 3%;
+  border-radius: 25px;
+  padding-left: 20px;
+  margin-left: 4%;
+  background-color: #fffffc;
+}
+/*Ndryshimi i ngjyres se borderit me focus ne fushen textarea*/
+.contactForm textarea:focus
+{
+
+  border-color: green;
+    outline: none;
+}
+/*Formatimi i fushes submit brenda klases contactForm*/
+#teksti{
+  margin-left: 4%;
+  font-family:sans-serif;
+  font-size: 15px;
+
+}
+
+#text{
+  text-decoration: none;
+  margin-left: 4%;
+  word-wrap: normal; 
+  text-shadow: 2.5px 3px 4px darkolivegreen;
+ 
+}
+
+.contactForm .submit
+{
+  width: 150px;
+  background-color:#ff4d4d;
+  color: white;
+  border-radius: 60px;
+}
+
+/*Ndryshimi i ngjyres se  butonit submit nese kalojme neper te*/
+.contactForm .submit:hover
+{
+  background-color: #ff333b;
+}
+.left a{
+  text-decoration: none;
+}
+
+/* Formatimi i butonit me id button1 brenda klases fromClass */
+.button1, #ruajbuton
+{
+  width: 270px;
+  background-color:#2950c5;
+  border-radius: 60px;
+  padding: 15px;
+  color: white;
+}
+
+/*Ndryshimi i ngjyres se  butonit nese kalojme neper te*/
+.button1:hover
+{
+  background: linear-gradient(blue,black);
+}
+
+/*Footeri*/
+/* Formatimi i tekstit ne footer */
+.footer
+{
+
+  width: 100%;
+  height: 50px;
+  float: left;
+  background-color:  #011424;
+  opacity: .8;
+
+}
+.footer p
+{
+ width:80%;
+ margin-left: 50px;
+ color: #B7B4B4;
+}
+.field1
+{
+  color:green;
+  display: inline;
+  border-color: white;
+  border-radius: 25px;
+  margin-left: 60px;
+  background-color: rgba(0,0,0,0.8);
+
+}
+.field2
+{
+  border-color:white;
+  border-radius: 25px;
+  margin-right: 60px;
+  margin-bottom: 90px;
+  margin-top: 20px;
+  background-color: rgba(0,0,0,0.5);
+  color:white;
+}
+
