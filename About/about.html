@@ -1,0 +1,328 @@
+<html>
+<head>
+<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="../header.css">
+<link rel="stylesheet" href="show-hide.css">
+  <script src="show-hide.js"></script>
+<title>About</title>
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="../show-hide.css">
+   	<script src="../jQuery.js"></script>
+   	<script src="../sweetalert.js"></script>
+
+   <script src="../scroll-up.js"></script>
+   	<link rel="stylesheet" href="../scroll-up-button.css">
+<style>
+
+	#div1,#div2{
+		width: 200px;
+		height: auto;
+		padding:10px;
+	margin:10px;
+		background-color: black;
+		border-radius: 10%;
+	}
+	#div2{
+		float:right;
+		margin-top: 5px;
+	}
+	 .arrow{
+      position: relative;
+      font-size: 60px;
+      float: left;
+      margin-left: 500px;
+      
+      transform: rotate(90deg);
+      animation: bouncearrow 1s infinite;
+      color: #011424;
+    }
+
+
+     @keyframes bouncearrow{
+        0%{top: 0px;  }
+        50%{top: 20px; color: white;}
+        100%{top: 0px; }
+      }
+</style>
+<script src="worker.js"></script>  <!-- Web Worker-->
+    <!--Editimi Web Worker-->
+    <script>
+    if(window.Worker)
+    {
+            const num1 = 12;
+            const num2 = 2;
+            var myWorker = new Worker("worker.js");
+            var message = {addThis: {num1,num2}};
+            myWorker.postMessage(message)
+        myWorker.onmessage = function(e)
+        {
+            console.dir(e.data.result);
+        };
+    }
+    </script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+  $("#fadeto").click(function(){
+    $(this).fadeTo("slow", 0.6,function(){
+    	alert("Go down below to get the answer ");
+    });
+   
+  });
+});
+	</script>
+<script>
+function allowDrop(ev)
+{
+	ev.preventDefault();
+}
+function drag(ev)
+{
+	ev.dataTransfer.setData("text",ev.target.id);
+}
+
+function drop(ev)
+{
+	ev.preventDefault();
+	var data=ev.dataTransfer.getData("text");
+	ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+
+<script> 
+$(document).ready(function(){
+  $("#image").hover(function(){
+    $(this).animate({height:'500px',width:'500px'});
+  }, function(){
+        $(this).animate({height:'350px',width:'350px'});
+    });
+});
+</script> 
+
+</head>
+
+
+<body>
+
+<header>
+  <h1>Smart Home</h1>
+  <h5>How Smart Homes Work ?!</h5>
+
+  <form class="search">
+    <input type="text" placeholder="search">
+    <button type="submit">
+      <i class="fa fa-search"></i>
+    </button>
+  </form>
+
+  <div class="nav">
+				<ul>
+					<<li><a href="../home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="#">Smart</a>
+        <ul>
+          <li><a href="../Smart/smart-heating/smart-heating.html">Heating</a></li>
+          <li><a href="../Smart/smart-lighting/smart-lighting.html">Lighting</a></li>
+          <li><a href="../Smart/smart-security/smart-security.html">Security</a></li>
+        </ul>
+      </li>
+      <li><a href="../Top-selling/top-selling.html">Top Selling</a></li>
+        <li><a href="../Contact/contact.html">Contact</a></li>
+ 		</ul>
+	</div>
+</header>
+
+	<!--Paralaks efect -->
+<div class="parallax">
+  <div class="header">
+
+  <h1 id="fadeto">What is a Smart Home ?</h1>
+  <div class="arrow">&#8674;</div>
+  </div>
+</div>
+<div class="paragraph">
+  <div class="left">
+    <p> 
+  Any home can be a smarthome <br>
+  <br>
+    It’s the powerful connections that make it smart<br>
+ </p>
+  </div>
+  <div class="right">
+     <img src="../images/about/home.gif" id="image" width="350px" height="350px"> 
+  </div>
+</div>
+
+
+   </div>
+  <div id="game-div">
+    <div class="parallax1">
+      <div class="header"></div>
+    </div>
+      <div id="home-game">
+          <h1 class="beauty_head">Play a game - Collect as many smart items as you can</h1>
+          <canvas id="game" width="750" height="500">
+            Shleftuesi juaj nuk e perkrah kanvasin
+          </canvas>
+        </div>
+  </div>
+ 
+ <div class="paragraph">
+
+<p>	Smart home is a term that refers to modern homes that have appliances, lighting and/or electronic devices that can be controlled remotely by the owner, often via a mobile app</p>
+<!--Audio (Move house)-->
+<audio controls>
+  <source src="../images/about/move.mp3" type="audio/wav">
+</audio>
+
+<div class="divi">
+
+
+
+<!--Drag and drop method -->
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <h1 style="color:white; font-size:20px;">Take your home whenever you go(Drag and Drop)</h1>
+<img id="drag1" src="../images/about/home.gif" draggable="true" ondragstart="drag(event)" >
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <h1 style="color:white; font-size:20px; margin-top: 5; "> Take your home whenever you go(Drag and Drop)</h1>
+</div>
+
+</div>
+</div>
+
+
+<script>
+$(document).ready(function(){
+    $("#rm").click(function(){
+        $("iframe").remove(".remove");
+         $("input").remove(".remove1");
+         $("a").remove(".remove2");
+    });
+});
+</script>
+
+
+
+
+
+ <!-- Butoni per scroll up -->
+<button onclick="topFunction()" id="Btn"  title="Go to top"><p></p></button>
+<div id="quiz">
+  <div class="right">
+    <div class="costs">
+      <h1>How Smart Homes Work</h1>
+      <p>Any device in your home that uses electricity can be put on your home network and at your command. Whether you give that command by voice, remote control, tablet or smartphone, the home reacts. Most applications relate to lighting, home security, home theater and entertainment, and thermostat regulation.</p>
+      <p> What is called a home with devices controlled by your smart phone? </p>
+      <div id="quiz-question">
+        <input type="text" id="name">
+        <button onclick="check_input();">Submit </button>
+      </div>
+    </div>
+    <p id="message" style="font-weight: bold;padding-left:150px;"></p>
+
+    <script>
+        function check_input(){
+
+        var answer= "smarthome",answer1="smart home";
+        var Name=document.getElementById("name").value;
+            var message1=Name.toLowerCase();
+            var message = document.getElementById("message");
+             message.innerHTML = "";
+            
+        try{
+           if (message1== ""){
+              throw "empty!";
+             }
+
+             if(isNaN(message1)==false){
+               throw "a number";   
+          }
+
+             
+            if(answer==message1||answer1==message1)
+        {
+           swal("Good job!", "you guessed it right", "success");
+        }
+        
+            if(answer!=message1&&answer1!=message1){
+                swal('Oops...','Wrong try again!','error');  
+           
+          }
+         }
+      catch(err) {
+            message.innerHTML = "Input is " + err;
+        }
+    }
+                
+      </script>
+  </div>
+  <div class="left">
+    <img src="../images/about/smartphone.png" style="border-radius: 0; width: 90%;">
+</div>
+</div>
+
+<div class="question">
+<!-- The average cost of a Smart Home-->
+<div class="left costs">
+  <h1>Costs to make your home smart</h1>
+  <p>Smart devices cost 30 to 50 percent more than their conventional counterparts. The average cost to install a home automation system nationwide is just a little over $1,000, with the high-end price at $3,500. So, it can be expensive. But not that expensive considering all the other high costs of running a home.</p>
+</div>
+<div class="right">
+  <svg height="120" width=600px>
+      <polygon points="300,0 0,120 600,120" style="fill:rgb(16,12,20);stroke:purple;stroke-width:1" />
+    </svg>
+  <div id="question-form">
+    <h2>Type the average cost to make your home smart</h2>
+            <form oninput="x.value=parseInt(a.value)+parseInt(b.value)"  >
+              <div id="input-div">
+                <input type="number" style="width: 40%; height: 50px; " id="a" value="1000">
+              <span id="plus-sign">+</span><input type="number" ; style="width: 40%; height: 50px; margin-right: 0px;" id="b" value="">
+              </div>
+              <p>=</p>
+              <p><output name="x" for="a b" id="output"></output>$</p>
+            </form>
+            <p>
+              <button onclick="validation()" >CHECK</button></p>
+              <p id="message"></p>
+            <script type="text/javascript">
+              function validation(){
+                
+              var A="1300";            
+              var B=document.getElementById("b").value;
+              var O=document.getElementById("output").value;
+              var message;
+              message=document.getElementById("message");
+                message.innerHTML="";
+                        try{
+                                 if(B==""){
+                                      throw " empty!";
+                                         }
+                                         
+                                if (A==O) {
+                  swal("Good job!", "you guessed it right", "success");
+                        }
+        
+                  if(A!=O){
+                       swal('Oops...','Wrong- The Average cost of a Smart Home is','error');    
+                  }
+
+                  
+              }
+                 catch(err){
+                message.innerHTML = "input is" + err;
+                   }
+        }
+          </script>
+
+  </div>    
+</div>
+</div>
+ 
+<script type="text/javascript" src="loja.js"></script>  
+</body>
+</html>

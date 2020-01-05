@@ -1,0 +1,336 @@
+body{
+	margin:0;
+  padding: 0;
+  color:black;
+ 
+}
+header{
+  background-color: #003300;
+}
+
+ul{
+  list-style-type: none;
+  padding-bottom:50px;
+  margin:0;
+}
+
+ul li {
+
+  padding:2px;
+  float:left;
+  font-size: 20px;
+  line-height: auto;
+  text-align: center;
+ width: 150px; 
+  height: auto;
+}
+
+ul li a{
+  font-style: italic;
+    font-size: 30px;
+    padding: 2px;
+  display: block;
+  color:white;
+  text-align:center;
+  text-decoration: none;
+  background-color:rgba(104, 111, 26, 0.99);
+}
+
+ul li a:hover
+{
+background-color:rgba(211, 230, 9, 0.99);
+
+}
+
+ul li ul li{
+  display: none;
+  
+}
+
+ul li:hover ul li{
+  display: block;
+  transition: 1s all;
+  animation: drop 1s ease;
+}
+
+@keyframes drop{
+  0%{
+    transform: scale(2,2)rotateX(90deg);
+  }
+  100%{
+    transform: scale(1,1)rotateX(0deg);
+  }
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/about/fig1.jpg");
+  padding-top: 0;
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.paragraph{
+  margin-top: -50px;
+   width: 100%;
+  height:800px;
+  color:black;
+  background-color: white;
+
+}
+
+
+.header #fadeto{
+	text-align: center;
+	font-size: 100px;
+  color:white;
+  margin-right:50px;
+  padding-top: 200px;
+
+}
+.divi{
+  width: 100%;
+  height: 400px;
+  background-color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding:0;
+  display: inline-block;
+
+}
+div #div1{
+  margin-left: 20%;
+}
+div #div1 h1{
+  
+margin-top: 10;
+  
+}
+
+div #div2{
+     margin-top: -150px;
+  margin-right: 20%;
+ padding: 30px;
+}
+
+audio{
+position: relative;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding-left:5px;
+}
+
+#game-div{
+  height: 800px;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../images/about/fig2.jpg");
+  /* Set a specific height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);  
+  z-index: -1;
+}
+
+#home-game{
+  position: relative;
+  top:-800px;
+  z-index: 2;
+}
+
+.header{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(16,12,20,0.6);
+
+  /*background-image:linear-gradient(90deg,#000033,#003300,#FFFFFF);
+  animation: BackgroundGradient 10s ease infinite;
+    background-size: 400%;
+    margin-top:-200;*/
+}
+img{
+	background-image: transparent;
+width: 200px;
+height: auto;
+
+border-radius: 50%;
+
+}
+#image{
+  background-image: transparent;
+width: 350px;
+height: 350px;
+border-radius: 50%;
+}
+
+
+  p{
+    font-size:30px;
+    padding-top: 180px;
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  
+
+/*Home Game*/
+
+#game{
+  position: relative;
+  height: 500px;
+  left: 50%;
+  transform: translate(-50%, 0); 
+}
+/*---heading------*/
+.beauty_head{
+  background-color: none;
+  color:white ;
+  font-size: 45px;
+  margin-top: 50px;
+  text-align: center;
+  font-family: Garamond;
+  margin-bottom: 80px;
+
+}
+
+.left{
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+.right{
+  float: right;
+  width: 50%;
+  height: 100%;
+  
+}
+
+.right img, .left img{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+} 
+
+
+#quiz{
+  margin-top: 0;
+  height: 600px;
+  color: black;
+}
+#quiz-question{
+  position: relative;
+  width: 65%;
+  height: 100px;
+  left: 50%;
+  transform: translate(-50%, 0); 
+}
+#quiz h1{
+  margin-top: 100px;
+  padding-top: 0px;
+}
+#quiz input, #quiz button{
+  padding: 25px;
+  border: 1px solid black;
+
+}
+#quiz input{
+  width: 70%;
+
+}
+#quiz button{
+  width: 25%;
+  background-color: rgb(16,12,20);
+  color: white;
+}
+.question{
+  height: 600px;
+}
+.costs h1{
+  margin-top: 200px;
+  color: black;
+  font-family: Garamond;
+  font-size: 30px;
+  text-align: center;
+
+}
+.costs p{
+  font-size: 22px;
+  font-family: Garamond;
+  padding-top: 0px;
+
+}
+#question-form{
+  width: 550px;
+  height: 350px;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border: 1px solid black;
+  background-color: rgb(16,12,20);
+  color: white; 
+}
+svg{
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+#question-form form{
+  margin-bottom: 0px;
+}
+#question-form input{
+  padding: 10px;
+  background-color: rgb(16,12,20);
+  color: white;
+  font-size: 25px;
+  margin: 3.5%;
+  margin-bottom: 0px;
+}
+#plus-sign{
+  font-size: 25px;
+}
+#question-form p{
+  margin-top: 0px;
+  padding-top: 0px;
+  text-align: center; 
+  margin-left: -10px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+#input-div{
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, 0);
+  margin-top: 20px; 
+}
+#question-form h2{
+  text-align: center;
+  font-size: 25px;
+  font-family: Garamond;
+}
+#question-form button{
+  width: 30%;
+  height: 145px; 
+  margin: 0px;
+  padding: 0px; 
+  font-size: 20px;
+  background-color: rgb(16,12,20);
+  color: white; 
+}
