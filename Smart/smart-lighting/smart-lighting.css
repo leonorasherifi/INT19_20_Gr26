@@ -1,65 +1,65 @@
 body{
-	font-family:Brush Script MT;
-	margin:0;
-	padding:0;
-	color:white;
-	font-size: 30px;
-background-image: url("fig1.jpg");
-background-attachment: fixed;
-background-position: cover;
-background-attachment: cover;
-}
-.transparent{
-	background-color: rgba(0,0,0,0.9);
-	width: auto;
-	height: 400px;
-	position: relative;
-	margin-left: 200px;
-	margin-right: 200px;
-	margin-top: 50px;
+  font-family:Garamond;
+  margin:0;
+  padding:0;
+  color:white;
+  font-size: 30px;
 
 
 }
- .bord{
-	margin-top: 100px;
-	background-color: rgba(0,0,0,0.9);
-	width: auto;
+.item{
 
-	position: relative;
-	margin-left: 200px;
-	margin-right: 200px;
-	margin-bottom: 0;
-	padding-bottom: 0;
-	box-sizing: border-box;
-	
+  font-size:40px;
+  color:black;
 }
-h1{
-	font-size: 40px;
-	text-align: center;
+.item h2{
+  text-align: center;
+}
+.item1{
+height: 500px;
+padding-left: 10%;
+padding-right: 10%;
+padding-top:10%;
 
 }
-.items{
-	width: auto;
-	
-	display: inline-flex;
-	margin-top:300px;
-	background-color: black;
-
+.item1 p{
+  font-size:30px;
+  color:black;
+}
+.item1 h1{
+  color:black;
+  font-size:40px;
 }
 
-.image{
-	width: 50%;
-	height: auto;
+a{
+  text-decoration: none;
+  color: white;
+  font-size: 20px; 
+  font-weight: bold; 
+}
+.buy{
+  width: 180px;
+  height: 60px;
+  padding: 10px;
+  float: left;
+  margin-left: 100px;
+  background-color: #281E33;
+  color: white;
 }
 
 
+.item1_background{
+  background-color: #281E33;
+}
+.item1_background p, .item1_background h1{
+    color: white;
+}
 
-.paragraph a{
-	text-decoration: none;
-	color:white;
-	border:1px solid white;
-	border-radius: 40%;
-    float:right;
-
-
+.item1_background .buy{
+  background-color: white;
+  float: right;
+  margin-right: 100px;
+}
+.item1_background a{
+    color: black;
 }

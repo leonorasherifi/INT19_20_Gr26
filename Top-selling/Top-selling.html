@@ -3,7 +3,8 @@
 	<title>Top selling</title>
 
 		<link rel="stylesheet" href="Top_selling.css"/>
-
+		<link rel="stylesheet" href="../header.css">
+		<link rel="stylesheet" href="../footer.css"/>
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
@@ -12,53 +13,84 @@
 
 </head>
 <body>
+
+<header>
+	<h1>Smart Home</h1>
+	<h5>How Smart Homes Work ?!</h5>
+
+	<form class="search">
+		<input type="text" placeholder="search">
+		<button type="submit">
+			<i class="fa fa-search"></i>
+		</button>
+	</form>
+
+	<div class="nav">
+		<ul>
+			<li><a href="../home.html">Home</a></li>
+			<li><a href="../About/about.html">About</a></li>
+			<li><a href="#">Smart</a>
+				<ul>
+					<li><a href="../Smart/smart-heating/smart-heating.html">Heating</a></li>
+					<li><a href="../Smart/smart-lighting/smart-lighting.html">Lighting</a></li>
+					<li><a href="../Smart/smart-security/smart-security.html">Security</a></li>
+				</ul>
+			</li>
+			<li><a href="top-selling.html">Top Selling</a></li>
+  			<li><a href="../Contact/contact.html">Contact</a></li>
+ 		</ul>
+	</div>
+</header>
+
+
 <!--page Wrapper-->
 <div class="page-wrapper">
 
 	<!-- post slider  TRENDING POSTS -->
 	<div class="post-slider">
-		<h1 class="slider-title">Trending posts</h1>
+		
+		<h1 class="slider-title" style="color:black;">Trending posts</h1>
 		<i class="fa fa-chevron-left prev"></i>
 		<i class="fa fa-chevron-right next"></i>
 
 		<div class="post-wrapper">
 
 			<div class="post">
-				<img src="images/Top-selling/NM.jpg" class="slider-image">
+				<img src="../images/top-selling/NM.webp" class="slider-image">
 				<div class="post-info">
 					<h4><a href="images/Top-selling/NM.jpg">Nest Wifi</a></h4>
 					<i class="fa fa-user"> Tyler Lizenby/CNET</i>
-					&nbsp;
+					<br/>
 					<i class="fa fa-calendar"> May 8, 2019</i>
 				</div>
 			</div>
 
 			<div class="post">
-				<img src="images/Top-selling/RVC.jpg" class="slider-image">
+				<img src="../images/top-selling/RVC.jpg" class="slider-image">
 				<div class="post-info">
 					<h4><a href="images/Top-selling/RVC.jpg">A robacuum</a></h4>
 					<i class="fa fa-user"> Brian Bennett </i>
-					&nbsp;
+					<br/>
 					<i class="fa fa-calendar">December 20, 2019</i>
 				</div>
 			</div>
 
 			<div class="post">
-				<img src="images/Top-selling/SmartL.jpg" class="slider-image">
+				<img src="../images/top-selling/SmartL.jpg" class="slider-image">
 				<div class="post-info">
 					<h4><a href="images/Top-selling/SmartL.jpg">A smart lock</a></h4>
-					<i class="fa fa-user"> &euml;&euml; &ctdot;&ctdot;???!!!</i>
-					&nbsp;
+					<i class="fa fa-user"> &euml; &ctdot;?!</i>
+					<br/>
 					<i class="fa fa-calendar"> Mar  8, 2020</i>
 				</div>
 			</div>
 
 			<div class="post">
-				<img src="images/Top-selling/GNM.jpg" class="slider-image">
+				<img src="../images/top-selling/GNM.jpg" class="slider-image">
 				<div class="post-info">
 					<h4><a href="images/Top-selling/GNM.jpg">Google Nest Mini</a></h4>
 					<i class="fa fa-user"> Tyler Lizenby/CNET</i>
-					&nbsp;
+					<br/>
 					<i class="fa fa-calendar"> May 8, 2019</i>
 				</div>
 			</div>
@@ -74,11 +106,11 @@
 	<div class="content">
 
 		<div class="main-content">
-			<h1 class="recent-post-title">The best smart home devices for 2020</h1>
+			<h1 class="recent-post-title" style="color:black;">The best smart home devices for 2020</h1>
 
 
 			<div class="post">
-				<img src="images/Top-selling/SmartL.jpg" class="post-image">
+				<img src="../images/top-selling/SmartL.jpg" class="post-image">
 				<div class="post-preview">
 					<h2><a href="https://www.pcmag.com/reviews/smart-home">2.A smart lock</a></h2>
 					<i class="fa fa-user"> &euml; &ctdot;</i>
@@ -92,7 +124,7 @@
 
 
 			<div class="post">
-				<img src="images/Top-selling/RVC.jpg" class="post-image">
+				<img src="../images/top-selling/RVC.jpg" class="post-image">
 				<div class="post-preview">
 					<h2><a href="https://www.pcmag.com/reviews/smart-home">3. A robot vacuum</a></h2>
 					<i class="fa fa-user">Brian Bennett</i>
@@ -105,7 +137,7 @@
 
 
 			<div class="post">
-				<img src="images/Top-selling/GNM.jpg" class="post-image">
+				<img src="../images/top-selling/GNM.jpg" class="post-image">
 				<div class="post-preview">
 					<h2><a href="https://www.pcmag.com/reviews/smart-home">Google Nest Mini</a></h2>
 					<i class="fa fa-user">Tyler Lizenby/CNET</i>
@@ -120,14 +152,14 @@
 
 
 			<div class="post">
-				<img src="images/Top-selling/NM.jpg" class="post-image">
+				<img src="../images/top-selling/NM.webp" class="post-image">
 				<div class="post-preview">
 					<h2><a href="https://www.pcmag.com/reviews/smart-home">Nest Wifi</a></h2>
 					<i class="fa fa-user">Chris Monroe/CNET</i>
 					&nbsp;
 					<i class="fa fa-calendar"> september  22, 2019</i>
 					<p> Wi-Fi is everything -- particularly once you start spreading things like smart speakers, smart lights, smart plugs and smart all else from room to room. After all, those connected doodads won't do you much good if they can't, you know, connect. 
-					That's why a mesh router that's built to spread a strong, speedy signal throughout your house might make for a particularly smart upgrade -- especially if you're living in a big home. And, of the ones we've tested, we think Nest Wifi is the smartest pick. At $269, the two-piece starter kit was able to fill the 5,800-square-foot CNET Smart Home with decent signal strength, and it never once dropped our connection as we moved around conducting speed test after speed test. On top of that, the range extender doubles as a smart speaker, so as you spread a reliable connection from room to room, you'll be spreading the Google Assistant's footprint in your home with it.
+					That's why a mesh router that's built to spread a strong, speedy signal throughout your house might make for a particularly smart upgrade -- especially if you're living in a big home. And, of the ones we've tested, we think Nest Wifi is the smartest pick. At $269, the two-piece starter kit was able to fill the 5,800-square-foot CNET Smart Home with decent signal strength, and it never once dropped our connection as we moved around conducting speed test after speed test. On top of that, the range extender doubles as a smart speaker, so as you spread a reliable connection from room to room.
 					</p>
 				</div>
 			</div>
@@ -206,70 +238,13 @@
                  	class="btn">Remove</button></span>
             	</td>
           	</tr>
+
         </tbody>
 
     </table>
   </div>
     
 </div>
-
-
-
-
-
-
-
-<div id="pricing-table" class="clear">
-
-    <div class="plan">
-        <h3>A smart lock<span>$300</span></h3>
-        <a class="signup" href="join.html">Sign up</a>         
-        <ul>
-            <li><b>WM-2000FP50Y</b> Model</li>
-            <li><b>IP65</b> IP Rating:</li>
-            <li><b>black</b> Color</li>
-			<li><b>5% to 95%</b> Work Humidity</li>			
-        </ul> 
-    </div>
-
-
-    <div class="plan" id="most-popular">
-        <h3>A robot vacuum<span>$400</span></h3>
-        <a class="signup" href="join.html">Sign up</a>        
-        <ul>
-            <li><b>GY-900</b> Mode</li>
-            <li><b>9CM</b> Body thickness</li>
-            <li><b>Black</b> Color</li>
-			<li><b>CE, RoHS, EMC</b> Certificate</li>			
-        </ul>    
-    </div>
-
-
-    <div class="plan">
-        <h3>Google Nest Mini<span>$130</span></h3>
-		<a class="signup" href="join.html">Sign up</a>
-        <ul>
-            <li><b>173 g (0.38 lb)</b> Mass</li>
-            <li><b>Smart speaker</b> Type</li>
-            <li><b>Google</b> Developer</li>
-			<li><b>Voice commands</b> Input</li>			
-        </ul>
-    </div>
-
-
-    <div class="plan">
-        <h3>Nest Wifi<span>$240</span></h3>
-        <a class="signup" href="join.html">Sign up</a>		
-        <ul>
-            <li><b>12 oz (340 g)</b> Mass</li>
-            <li><b>Router</b> Type</li>
-            <li><b>Google</b> Developer</li>
-			<li><b>Smartphone</b> Input</li>			
-        </ul>
-    </div> 	
-
-</div>
-
 
 
 <!-- JQuery -->
@@ -281,7 +256,88 @@
 
 
 <!--custom script-->
-<script src="Top_selling.js "></script>
+<script src="top-selling.js "></script>
+
+
+
+
+<footer class="footer">
+	<div class="footer_container">
+			<div id="title">
+				<h2>Find What You Want Fast</h2>
+			</div>
+			
+		<div class="footer-1" style="width: 20%;">
+			<img class="logo" src="../smart-home.png">
+		</div>
+
+		<div class="footer-2" style="width: 20%;">
+			<h3>Quick Links</h3>
+			<div class="links">
+				<a href="../About/about.html">About Smart</a>
+					<hr>
+				<a href="../Smart/smart-heating/smart-heating.html">Heating </a>
+					<hr>
+				<a href="../Smart/smart-lighting/smart-lighting.html">Lighting</a>
+					<hr>
+				<a href="top-selling.html">Top Product </a>
+					<hr>
+				<a href="../Smart/smart-security/smart-security.html">Security </a>
+					<hr>
+				<a href="../Contact/contact.html">Sign in </a>
+					<hr>
+			</div>
+			
+		</div>
+ 
+		<div class="footer-3" style="width: 25%;">
+ 			<h3>Contact Us</h3>
+
+			<div>
+				<p class="company">...</p>
+				<p>660 NORTH CAPITOL ST NW,</p>
+				<p>WASHINGTON</p>
+				<p>DC 20001</p><br>
+			</div>
+ 
+			<div>
+				<p class="company">Tel:</p>
+				<p>+38344703042</p><br>
+			</div>
+ 
+			<div>
+				<p class="company">Fix:</p>
+				<p>877-827-2385</p><br>
+			</div>
+
+			<div>
+				<address class="company">
+					Email:
+					<a href="mailto:lindaimmeri@gmail.com?Subject=Hello%20again" target="_top">lindaimmeri@gmail.com</a>
+				</address>
+			</div>
+		</div>
+ 		
+		<div class="footer-4" style="width: 20%;">
+			<h3>Keep Up To Date</h3>
+			<div class="footer-icons">			
+				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><p>Facebook</p>
+					<hr>
+				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a><p>Twitter</p>
+					<hr>
+				<a href="https://www.flickr.com/photos/flickr/"><i class="fa fa-photo on fliokr"></i></a><p>Photo On Flickr</p>
+					<hr>
+				<a href="https://github.com/"><i class="fa fa-github"></i></a><p>Github</p>
+					<hr>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+
 
 </body>
 </html>
