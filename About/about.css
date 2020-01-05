@@ -4,63 +4,7 @@ body{
   color:black;
  
 }
-header{
-  background-color: #003300;
-}
 
-ul{
-  list-style-type: none;
-  padding-bottom:50px;
-  margin:0;
-}
-
-ul li {
-
-  padding:2px;
-  float:left;
-  font-size: 20px;
-  line-height: auto;
-  text-align: center;
- width: 150px; 
-  height: auto;
-}
-
-ul li a{
-  font-style: italic;
-    font-size: 30px;
-    padding: 2px;
-  display: block;
-  color:white;
-  text-align:center;
-  text-decoration: none;
-  background-color:rgba(104, 111, 26, 0.99);
-}
-
-ul li a:hover
-{
-background-color:rgba(211, 230, 9, 0.99);
-
-}
-
-ul li ul li{
-  display: none;
-  
-}
-
-ul li:hover ul li{
-  display: block;
-  transition: 1s all;
-  animation: drop 1s ease;
-}
-
-@keyframes drop{
-  0%{
-    transform: scale(2,2)rotateX(90deg);
-  }
-  100%{
-    transform: scale(1,1)rotateX(0deg);
-  }
-}
 
 .parallax {
   /* The image used */
@@ -333,4 +277,8 @@ svg{
   font-size: 20px;
   background-color: rgb(16,12,20);
   color: white; 
+}
+footer p{
+  padding-top: 0px;
+    font-size:14px;
 }

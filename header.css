@@ -1,31 +1,5 @@
 
-/*<header>
-	<h1>Smart Home</h1>
-	<h5>How Smart Homes Work ?!</h5>
 
-	<form class="search">
-		<input type="text" placeholder="search">
-		<button type="submit">
-			<i class="fa fa-search"></i>
-		</button>
-	</form>
-
-	<div class="nav">
-		<ul>
-			<li><a href="home.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="home.html">Smart</a>
-				<ul>
-					<li><a href="smart-heating.html">Heating</a></li>
-					<li><a href="smart-lighting.html">Lighting</a></li>
-					<li><a href="smart-security.html">Security</a></li>
-				</ul>
-			</li>
-			<li><a href="Top_selling.html">Top Selling</a></li>
-  			<li><a href="Contact/contact.html">Contact</a></li>
- 		</ul>
-	</div>
-</header>*/
 header{
 	background-color:#281E33;
 	width: 100%;
