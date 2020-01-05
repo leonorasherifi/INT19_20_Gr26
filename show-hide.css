@@ -1,0 +1,40 @@
+/* Stilizimi i headingut qe klikohet per tu shfaqur teksti */
+.content .tittle{
+	text-decoration: none;
+	color: #565252;
+	font-size: 20px;
+	position: relative;
+}
+
+/* Animacione */
+
+.content .tittle:before{
+	content: '' ;
+	width: 0px;
+	height: 5px;
+	background: orange;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transition: .5s;
+}
+
+/*Si reagom animacioni me kursor mbi */
+.content .tittle:hover:before{
+	width: 50%;
+	transform: translateX(100%);
+	background-color: orange;
+}
+
+/* Stilizimi i textit kur kalone kursori mbi */
+.content  .tittle:hover{
+	color: orange;
+}
+
+/* Teksti qe eshte i fshehur */
+.content .divhidden {
+	display: none;
+	margin-left: 15px;
+}
+
+

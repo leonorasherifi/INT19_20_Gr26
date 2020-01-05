@@ -30,19 +30,19 @@ header{
 	background-color:#281E33;
 	width: 100%;
 	font-family:Garamond;
-	height: 330px;
+	height: 230px;
 	padding-top: 0px;
 	margin-top: 0px;
 }
 
 h1{
 	color: white;
-	font-family:Brush Script MT;
+	font-family:Garamond;
 	font-size:60px;
     padding-left:5px;
     padding-top:5px;
     margin: 1px;
-    text-shadow: 5px 5px 5px black;
+  
 }
 
 h5{
