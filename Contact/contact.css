@@ -1,14 +1,15 @@
-
+#foto
+{
+   background: linear-gradient(blue,black);
+    width: 100%;
+}
 
 body
 {
     font-family:'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    background-image:url("join.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
+    
 }
 
 section {
@@ -26,11 +27,19 @@ section {
   border-radius: 10px;
 
 }
-
+.cont{
+  margin-top: 0;
+  height: 1000px;
+   background-image:url("join.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* Formatimi i klases contactForm */
 .contactForm{
+  padding-top: 90px;
   margin-right: 10px;
-  margin-top: 200px;
+  margin-top: 0px;
   font-family:sans-serif,cursive,fantasy;
 }
 
@@ -39,7 +48,7 @@ Formatim brenda elementeve te formes*/
 
 /*Formatimi i fushes input brenda klases contactForm*/
 .contactForm input{
-  padding: 25px;
+  padding: 15px;
   margin-bottom: 3%;
   margin-left: 4%;
   border-radius: 25px;
@@ -101,6 +110,7 @@ Formatim brenda elementeve te formes*/
 {
   background-color: #ff333b;
 }
+
 .left a{
   text-decoration: none;
 }
@@ -121,24 +131,6 @@ Formatim brenda elementeve te formes*/
   background: linear-gradient(blue,black);
 }
 
-/*Footeri*/
-/* Formatimi i tekstit ne footer */
-.footer
-{
-
-  width: 100%;
-  height: 50px;
-  float: left;
-  background-color:  #011424;
-  opacity: .8;
-
-}
-.footer p
-{
- width:80%;
- margin-left: 50px;
- color: #B7B4B4;
-}
 .field1
 {
   color:green;
@@ -158,5 +150,8 @@ Formatim brenda elementeve te formes*/
   margin-top: 20px;
   background-color: rgba(0,0,0,0.5);
   color:white;
+
 }
+
+
 
