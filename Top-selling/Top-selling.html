@@ -7,10 +7,39 @@
 		<link rel="stylesheet" href="../footer.css"/>
 		<!-- Font Awesome -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 		<!-- Google Fonts -->
 		<link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
-
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style>
+@font-face {
+  font-family: myfont;
+  src: url(../myfont.ttf);
+  font-weight: bold;
+}
+#panel{
+	font-family: myfont;
+	display: none;
+	height: 100px;
+	width: 70%;
+	text-align:center;
+	border:solid 1px black;
+	margin-left: 200px;
+	font-size:30px;
+	padding:10px;
+	background-image: linear-gradient(to right,rgba(184, 13, 184, 0.17), rgba(205, 39, 205, 0.68), rgba(184, 13, 184, 0.87));
+	
+}
+#flip{
+	font-family: myfont;
+}
+</style>
 </head>
 <body>
 
@@ -49,7 +78,8 @@
 	<!-- post slider  TRENDING POSTS -->
 	<div class="post-slider">
 		
-		<h1 class="slider-title" style="color:black;">Trending posts</h1>
+		<h1 class="slider-title" id="flip" style="color:black;">Trending posts</h1>
+		<div id="panel">Have a look down below to find the most used and popular devices of 2019-2020</div>
 		<i class="fa fa-chevron-left prev"></i>
 		<i class="fa fa-chevron-right next"></i>
 
@@ -186,7 +216,7 @@
       <span class="table-add"><a href="#!" class="text-success"><i
             class="fa fa-plus fa-2x" aria-hidden="true"></i> </a>add </span>
 
-    <table class="table"  cellspacing="5" cellpadding="10">
+    <table class="table">
 
         <thead>
           	<tr class="a">
