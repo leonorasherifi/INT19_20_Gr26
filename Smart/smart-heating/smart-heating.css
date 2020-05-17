@@ -1,14 +1,5 @@
-body{
-  font-family:Garamond;
-  margin:0;
-  padding:0;
-  color:white;
-  font-size: 30px;
-
-
-}
 .item{
-
+margin-top:150px;
   font-size:40px;
   color:black;
 }
@@ -19,7 +10,7 @@ body{
 height: 500px;
 padding-left: 10%;
 padding-right: 10%;
-padding-top:10%;
+padding-top:5%;
 
 }
 .item1 p{
@@ -31,7 +22,7 @@ padding-top:10%;
   font-size:40px;
 }
 
-a{
+#buy1{
   text-decoration: none;
   color: white;
   font-size: 20px; 

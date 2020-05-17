@@ -1,21 +1,26 @@
 <html>
 <head>
-<link rel="stylesheet" href="about.css">
-<link rel="stylesheet" href="../show-hide.css">
-<link rel="stylesheet" href="../footer.css"/>
-  <script src="show-hide.js"></script>
-  <link rel="stylesheet" href="../header.css">
+        <title>About</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="../footer.css"/>
+    <link rel="stylesheet" href="../header.css">
 
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
 
-<title>About</title>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
- <link rel="stylesheet" href="../show-hide.css">
+    <script src="../sweetalert.js"></script>
+    <link rel="stylesheet" href="../scroll-up-button.css">
+    <link rel="stylesheet" href="../show-hide.css">
+    <script src="../scroll-up.js"></script>
+    <script src="show-hide.js"></script>
    	<script src="../jQuery.js"></script>
-   	<script src="../sweetalert.js"></script>
+   	
 
-   <script src="../scroll-up.js"></script>
-   	<link rel="stylesheet" href="../scroll-up-button.css">
+  
+   	
 <style>
 
 	#div1,#div2{
@@ -110,20 +115,13 @@ $(document).ready(function(){
 
 <body>
 
+
+<include src="header.html"></include>
 <header>
-  <h1>Smart Home</h1>
-  <h5>How Smart Homes Work ?!</h5>
-
-  <form class="search">
-    <input type="text" placeholder="search">
-    <button type="submit">
-      <i class="fa fa-search"></i>
-    </button>
-  </form>
-
+  <h1 id="title">Smart Home</h1>
   <div class="nav">
-				<ul>
-					<<li><a href="../home.html">Home</a></li>
+    <ul>
+      <li><a href="../home.html">Home</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="#">Smart</a>
         <ul>
@@ -132,10 +130,11 @@ $(document).ready(function(){
           <li><a href="../Smart/smart-security/smart-security.html">Security</a></li>
         </ul>
       </li>
-      <li><a href="../Top-selling/top-selling.html">Top Selling</a></li>
-        <li><a href="../Contact/contact.html">Contact</a></li>
- 		</ul>
-	</div>
+      <li><a href="../Top-selling/top-selling.html">Top</a></li>
+      <li><a href="../Buy Now/login.php">Buy</a></li>
+      <li><a href="../contact/contact.php">Contact</a></li>
+    </ul>
+  </div>
 </header>
 
 	<!--Paralaks efect -->
@@ -151,11 +150,11 @@ $(document).ready(function(){
     <p> 
   Any home can be a smarthome <br>
   <br>
-    It’s the powerful connections that make it smart<br>
+    It is the powerful connections that make it smart<br>
  </p>
   </div>
   <div class="right">
-     <img src="../images/about/home.gif" id="image" width="350px" height="350px"> 
+     <img src="../images/about/home.gif" style="margin-top:200px; width:350px;height:350px;"> 
   </div>
 </div>
 
@@ -328,64 +327,47 @@ $(document).ready(function(){
  
 <footer class="footer">
   <div class="footer_container">
-      <div id="title">
-        <h2>Find What You Want Fast</h2>
-      </div>
       
-    <div class="footer-1" style="width: 20%;">
+      
+    <div class="footer-1" style="width: 30%;margin-top:50px;">
       <img class="logo" src="../smart-home.png">
     </div>
 
-
-    <div class="footer-2" style="width: 20%;">
-      <h3>Quick Links</h3>
-      <div class="links">
-        <a href="about.html">About Smart</a>
-          <hr>
-        <a href="../Smart/smart-heating/smart-heating.html">Heating </a>
-          <hr>
-        <a href="../Smart/smart-lighting/smart-lighting.html">Lighting</a>
-          <hr>
-        <a href="../Top-selling/top-selling.html">Top Product </a>
-          <hr>
-        <a href="../Smart/smart-security/smart-security.html">Security </a>
-          <hr>
-        <a href="../Contact/contact.html">Sign in </a>
-          <hr>
-      </div>
-      
-    </div>
+    
  
-    <div class="footer-3" style="width: 25%;">
-      <h3>Contact Us</h3>
+    <div class="footer-3" style="width: 35%;margin-top:20px;margin-left:100px;">
+      <h3 style="font-size: 40px;">Contact Us</h3>
 
       <div>
         <p class="company">...</p>
-        <p>660 NORTH CAPITOL ST NW,</p>
-        <p>WASHINGTON</p>
-        <p>DC 20001</p><br>
+        <p id="adr">Kosova </p>
+        <p id="adr">Pristina</p>
+        
       </div>
  
       <div>
         <p class="company">Tel:</p>
-        <p>+38344703042</p><br>
+        <p id="adr">+38344703042</p><br>
       </div>
  
       <div>
         <p class="company">Fix:</p>
-        <p>877-827-2385</p><br>
+        <p id="adr">877-827-2385</p><br>
       </div>
 
       <div>
         <address class="company">
           Email:
+          <br>
           <a href="mailto:lindaimmeri@gmail.com?Subject=Hello%20again" target="_top">lindaimmeri@gmail.com</a>
+          <br>
+          <a href="mailto:leonorasherifi@gmail.com?Subject=Hello%20again" target="_top">leonorasherifi@gmail.com</a>
         </address>
       </div>
     </div>
     
     <div class="footer-4" style="width: 20%;">
-      <h3>Keep Up To Date</h3>
+      <h3 style="font-size: 40px;">Keep Up To Date</h3>
       <div class="footer-icons">      
         <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><p>Facebook</p>
           <hr>
@@ -399,6 +381,7 @@ $(document).ready(function(){
     </div>
   </div>
 </footer>
+
 
 <script type="text/javascript" src="loja.js"></script>  
 </body>

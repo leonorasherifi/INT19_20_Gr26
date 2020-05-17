@@ -1,51 +1,18 @@
-@media only screen and (max-width: 1045px) {
-
-.libero p {
-	background-color:#0B0B5A;
-	font-size: 12;
-	text-align: center;
-	color:#7F0808;
- 	padding:0px 6px 6px 6px;
- 	border-top-left-radius: 6px;
- 	border-top-right-radius: 6px;
- 	margin-left: 1%;
- 	margin-top: 5px;
- 	margin-right: 5px;
- 	margin-bottom: 0px;
- 	text-align: center;
-}}
-
 @media only screen and (min-width: 1045px) {
-.libero p {
-	background-color:#441E6A;
-	
-	font-size: 12;
-	text-align: center;
-	color:#7F0808;
- 	padding:0px 6px 6px 6px;
- 	border-top-left-radius: 6px;
- 	border-top-right-radius: 6px;
- 	margin-left: 65%;
- 	margin-top: 5px;
- 	margin-right: 5px;
- 	margin-bottom: 0px;
- 	text-align: center;
-}}
-
-.libero p a{
-	color: white;
-	font-family: calibri;
-	padding: 4px 16px;
-}
-/*---------------------------------------------------------------------------------------*/
-
-/*---------------------------------------------------------------------------------------*/
 /*  SECTION  (1 IMAGE)--------------------------------------------------------------*/
+
+#image1{
+	width: 100%;
+	height: 780px;
+}
+#photo{
+	margin-top: 0px;
+}
 .section{
 	width: 100%;
 	height: 500px;
 	margin-bottom: 30px;
-	margin-top:0;
+	margin-top:200px;
 }
 
 @media(max-width: 700px){
@@ -87,18 +54,18 @@
 }
 
 .imagetext a:hover {
-	background-color: #F44C1A;
-	color: black;
+	background-color: #341B41;
+	color: white;
 }
 
 .previous {
-	background-color: #CD3608;
-	color: black;
+	background-color: #826790;
+	color: white;
 	cursor: pointer;
 }
 
 .next {
-	background-color:#CD3608;
+	background-color:#826790;
 	color: white;
 	cursor: pointer;
 }
@@ -160,7 +127,7 @@
  	height: 150px;
  	margin-left: 1.5%;
  	margin-right:1.5%;
- 	margin-bottom: 200px;
+ 	margin-bottom: 50px;
 }
 
 .column h1{
@@ -183,7 +150,10 @@
 
 .img{
   	width:100%;
- 	height: 250px;
+ 	height: 350px;
+}
+.plan{
+	margin-left:30px;
 }
 /*-------------------------------------------------------------------------------*/
 
@@ -228,7 +198,37 @@
 }
 
 /*---Video content------*/
-#video_content{
+video{
+	width: 100%;
+}
+
+}
+.row{
+	height:550px;
+}
+#i{
+	width:250px;
+ 	height:250px;
+ 	margin-left:70px;
+ 	border-radius: 50%;
+ 	
+}
+#line{
+
+    margin-top: 100px;
+	height: 600px;
 	width: 100%;
 
+}
+.beauty{
+	text-align: left;
+	font-size: 60px;
+	color:#281E33;
+	margin-left:80px;
+}
+.col {
+	float: left;
+    width:20%;
+ 	height: 300px;
+ 	margin-left:100px;
 }

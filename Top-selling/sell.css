@@ -16,7 +16,6 @@
 	padding: 20px;
 	width: 180px;   
 	float: left;
-	position: relative;
 }
 
 #pricing-table #most-popular {
@@ -120,7 +119,6 @@
 /* --------------- */
 	
 #pricing-table .signup {
-	position: relative;
 	padding: 8px 20px;
 	margin: 20px 0 0 0;  
 	color: #fff;

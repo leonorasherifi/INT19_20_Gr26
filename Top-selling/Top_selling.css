@@ -3,8 +3,8 @@
 }
 
 body{
-	padding: 0px;
-	margin: 0px;
+	padding: 1px;
+	margin: -1px;
 	font-family: 'lora',serif;
 }
 
@@ -73,7 +73,7 @@ cursor: pointer;
 	display: inline-block;
 	background: white;
 	border-radius:5px;
-	box-shadow: 1rem 1rem 1rem 1rem #a0a0a033;
+	box-shadow: 1rem 1rem 1rem 1rem #281E33;
 }
 
 
@@ -96,6 +96,7 @@ cursor: pointer;
 	width: 90%;
 	position: relative;
 	margin: 30px auto 30px;
+	margin-bottom:10px;
 }
 
 .content .main-content{
@@ -107,9 +108,10 @@ cursor: pointer;
 .content .main-content .post{
 	width: 100%;
 	height: 300px;
-	margin: 20px auto;
-	border-right: 5px;
-	background: #e5c9ff;
+	margin-top: 70px;
+	border-top:2px solid black;
+
+	background:white;
 	font-size: 14;
 	overflow: auto;
 }

@@ -1,43 +1,51 @@
 <html>
 <html lang="en" manifest="site.appcache">
 <head>
-	<title>Smart Heating</title>
-	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<title>Smart Heating</title>
 	<link rel="stylesheet" href="smart-heating.css">
+	<link rel="stylesheet" href="../../footer.css">
 	<link rel="stylesheet" href="../../header.css">
-	<link rel="stylesheet" type="text/css" href="../../footer.css">
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-   
+
+        <!-- Font Awesome -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Candal|Lora&display=swap" rel="stylesheet">
+	
+	<link rel="stylesheet" href="Top-selling/sell.css">
+
+   <style>	
+	body {
+	   background-color: white;
+	color:black;
+	margin:0;
+	padding:0;
+	font-family: Garamond;
+}
+</style>
 
 	</head>
 
 	<body>
-<header>
-	<h1 style="text-align: left;">Smart Home</h1>
-  <h5>Keep your home secure by using our devices</h5>
 
-  <form class="search">
-    <input type="text" placeholder="search">
-    <button type="submit">
-      <i class="fa fa-search"></i>
-    </button>
-  </form>
-
+<header style="margin-top:-150px;margin-right:-10px;">
+  <h1 id="title">Smart Home</h1>
   <div class="nav">
-	<ul>
-					<li><a href="../../home.html">Home</a></li>
+    <ul>
+      <li><a href="../../home.html">Home</a></li>
       <li><a href="../../About/about.html">About</a></li>
       <li><a href="#">Smart</a>
         <ul>
-          <li><a href="smart-heating.html">Heating</a></li>
+          <li><a href="../../Smart/smart-heating/smart-heating.html">Heating</a></li>
           <li><a href="../../Smart/smart-lighting/smart-lighting.html">Lighting</a></li>
           <li><a href="../../Smart/smart-security/smart-security.html">Security</a></li>
         </ul>
       </li>
-      <li><a href="../../Top-selling/top-selling.html">Top Selling</a></li>
-        <li><a href="../../Contact/contact.html">Contact</a></li>
- 		</ul>
-	</div>
+      <li><a href="../../Top-selling/top-selling.html">Top</a></li>
+      <li><a href="../../Buy Now/login.php">Buy</a></li>
+      <li><a href="../../contact/contact.php">Contact</a></li>
+    </ul>
+  </div>
 </header>
 
 
@@ -49,11 +57,11 @@
 
 	 <img src="../../images/smart-heating/heat3.jpg"  class="image" style="float:right;width: 300px; height: 300px;" />
 	 <h1 >Evohome</h1>
-	 <p >With evohome, you control your home temperature room by room. Smart zoning means you only need to heat the areas you’re using, keeping you in control, saving energy and creating your perfect comfort zone.</p>
+	 <p >With evohome, you control your home temperature room by room. Smart zoning means you only need to heat the areas you are using, keeping you in control, saving energy and creating your perfect comfort zone.</p>
 			<p>Cost : 130.00$</p>
 
 
-	 <button class="buy"><a href="#">Buy</a> </button>
+	 <button class="buy"><a id="buy1" href="../../Buy Now/login.php">Buy</a> </button>
 </div>
 
 <div class="item1  item1_background">
@@ -63,7 +71,7 @@
 The Nest Learning Thermostat is an electronic, programmable, and self-learning Wi-Fi-enabled thermostat that optimizes heating and cooling of homes and businesses to conserve energy.</p>
 	 <p>Cost : 150.00$</p>
 
-	 <button class="buy"><a href="#">Buy</a> </button>
+	 <button class="buy"><a id="buy1" style="color:black;" href="../../Buy Now/login.php">Buy</a> </button>
 </div>
 
 <div class="item1">
@@ -74,7 +82,7 @@ The Nest Learning Thermostat is an electronic, programmable, and self-learning W
 	 <p >A warm welcome home every time Come back to a nice warm house without ever having to heat an empty one. The award-winning Hive Active Heating lets you control your heating from your smartphone.</p>
 	 <p>Cost : 150$</p>
 
-	 <button class="buy"><a href="#">Buy</a> </button>
+	 <button class="buy"><a id="buy1" href="../../Buy Now/login.php">Buy</a> </button>
 </div>
 
 
@@ -83,86 +91,69 @@ The Nest Learning Thermostat is an electronic, programmable, and self-learning W
 	 <img src="../../images/smart-heating/heat2.png" class="image" style="float:left;width: 300px; height: 300px;" />
 	 <h1 >Wiser</h1>
 	 <p >
-Wiser is easy to install and easy to use. It doesn’t have lots of advanced features but is a lot cheaper than some of its rivals, including Tado and Netatmo.</p>
+Wiser is easy to install and easy to use. It does not have lots of advanced features but is a lot cheaper than some of its rivals, including Tado and Netatmo.</p>
 	 <p>Cost : 165.00$</p>
 
-	 <button class="buy"><a href="#">Buy</a> </button>
+	 <button class="buy"><a id="buy1" style="color:black;" href="../../Buy Now/login.php">Buy</a> </button>
 		</div>
-
-
-
 
 <footer class="footer">
-	<div class="footer_container">
-			<div id="title">
-				<h2>Find What You Want Fast</h2>
-			</div>
-			
-		<div class="footer-1" style="width: 20%;">
-			<img class="logo" src="../../smart-home.png">
-		</div>
+  <div class="footer_container">
+      
+      
+    <div class="footer-1" style="width: 30%;margin-top:50px;">
+      <img class="logo" src="../../smart-home.png">
+    </div>
 
-		<div class="footer-2" style="width: 20%;">
-			<h3>Quick Links</h3>
-			<div class="links">
-				<a href="../../About/about.html">About Smart</a>
-					<hr>
-				<a href="smart-heating.html">Heating </a>
-					<hr>
-				<a href="../../Smart/smart-lighting/smart-lighting.html">Lighting</a>
-					<hr>
-				<a href="../../Top-selling/top-selling.html">Top Product </a>
-					<hr>
-				<a href="../../Smart/smart-security/smart-security.html">Security </a>
-					<hr>
-				<a href="../../Contact/contact.html">Sign in </a>
-					<hr>
-			</div>
-			
-		</div>
+    
  
-		<div class="footer-3" style="width: 25%;">
- 			<h3>Contact Us</h3>
+    <div class="footer-3" style="width: 35%;margin-top:20px;margin-left:100px;">
+      <h3 style="font-size: 40px;">Contact Us</h3>
 
-			<div>
-				<p class="company">...</p>
-				<p>660 NORTH CAPITOL ST NW,</p>
-				<p>WASHINGTON</p>
-				<p>DC 20001</p><br>
-			</div>
+      <div>
+        <p class="company">...</p>
+        <p id="adr">Kosova </p>
+        <p id="adr">Pristina</p>
+        
+      </div>
  
-			<div>
-				<p class="company">Tel:</p>
-				<p>+38344703042</p><br>
-			</div>
+      <div>
+        <p class="company">Tel:</p>
+        <p id="adr">+38344703042</p><br>
+      </div>
  
-			<div>
-				<p class="company">Fix:</p>
-				<p>877-827-2385</p><br>
-			</div>
+      <div>
+        <p class="company">Fix:</p>
+        <p id="adr">877-827-2385</p><br>
+      </div>
 
-			<div>
-				<address class="company">
-					Email:
-					<a href="mailto:lindaimmeri@gmail.com?Subject=Hello%20again" target="_top">lindaimmeri@gmail.com</a>
-				</address>
-			</div>
-		</div>
- 		
-		<div class="footer-4" style="width: 20%;">
-			<h3>Keep Up To Date</h3>
-			<div class="footer-icons">			
-				<a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><p>Facebook</p>
-					<hr>
-				<a href="https://twitter.com/"><i class="fa fa-twitter"></i></a><p>Twitter</p>
-					<hr>
-				<a href="https://www.flickr.com/photos/flickr/"><i class="fa fa-photo on fliokr"></i></a><p>Photo On Flickr</p>
-					<hr>
-				<a href="https://github.com/"><i class="fa fa-github"></i></a><p>Github</p>
-					<hr>
-			</div>
-		</div>
-	</div>
+      <div>
+        <address class="company">
+          Email:
+          <br>
+          <a href="mailto:lindaimmeri@gmail.com?Subject=Hello%20again" target="_top">lindaimmeri@gmail.com</a>
+          <br>
+          <a href="mailto:leonorasherifi@gmail.com?Subject=Hello%20again" target="_top">leonorasherifi@gmail.com</a>
+        </address>
+      </div>
+    </div>
+    
+    <div class="footer-4" style="width: 20%;">
+      <h3 style="font-size: 40px;">Keep Up To Date</h3>
+      <div class="footer-icons">      
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a><p>Facebook</p>
+          <hr>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a><p>Twitter</p>
+          <hr>
+        <a href="https://www.flickr.com/photos/flickr/"><i class="fa fa-photo on fliokr"></i></a><p>Photo On Flickr</p>
+          <hr>
+        <a href="https://github.com/"><i class="fa fa-github"></i></a><p>Github</p>
+          <hr>
+      </div>
+    </div>
+  </div>
 </footer>
+
+
 	</body>
 </html>

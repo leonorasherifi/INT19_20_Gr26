@@ -1,0 +1,131 @@
+
+.order{
+  height:800px;
+  margin-top:100px;
+  margin-bottom:-50px;
+}
+.loginimage{
+ float:left;
+}
+.loginF{
+  float:right;
+  margin-top:380px;
+  margin-right:160px;
+
+}
+#container{
+
+  width: 100%;
+  margin-top:100px;
+  height: 900px;
+  background-color:white;
+  float: right;
+}
+
+.accountForm{
+  background-color: #3c2542;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  left: 50%;
+  top: 50%;
+   border-radius: 3%;
+    box-shadow: 5px 5px black, 10px 10px white, 15px 15px black;
+  transform: translate(-50%, -50%);
+}
+#loginFrame{
+  height: 550px;
+   border-radius: 10%;
+ box-shadow: 5px 5px black, 10px 10px white, 15px 15px black;
+}
+
+h2{
+  position: relative;
+  text-align: center;
+  top: 20px;
+  font-size: 42px;
+  color:white;
+}
+
+.input-group{
+  position: relative;
+  padding: 3px;
+  width: 80%;
+  left: 50%;
+  top: 40px;
+  margin-top: 10px;
+  transform: translate(-50%, 0);
+}
+.error p{
+  text-align: center !important;
+  color: red !important;
+}
+#buttonBlock{
+  width: 40%;
+}
+
+input[type='submit']{
+  background-color: black;
+  border: none;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 18px;
+  margin-top:30px;
+  margin-bottom:80px;
+  margin-left:30px;
+}
+#textBlock{
+  margin-top: 15px;
+  margin-left: 20px;
+
+}
+#textBlock p{
+  display: inline-block;
+  margin-right: 35px;
+  float: right;
+}
+#textBlock label{
+  position: relative;
+  left: 5px;
+  top: -3px;
+  color:white;
+}
+
+.input-group a, #afterSignUp a{
+  text-decoration: none;
+  margin-top:-30px;
+  color: white;
+}
+.input-group a:hover, #afterSignUp a:hover{
+  color: rgb(66, 237, 244);
+}
+.form-control{
+  width: 450px;
+  height: 30px;
+}
+
+
+/*Reset email*/
+#resetEmailFrame{
+  height: 250px;
+}
+#resetPasswordFrame{
+  height: 300px;
+}
+
+/*After Sign Up*/
+#afterSignUp{
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  padding-top: 35px;
+}
+#afterSignUp p{
+  color: red;
+}
+#special{
+  color: white !important;
+  margin-top: 30px; 
+}
+
